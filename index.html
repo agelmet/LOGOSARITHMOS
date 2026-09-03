@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Λόγος &amp; Αριθμός — Ψυχοπαιδαγωγικό Κέντρο | Βούλα</title>
+<meta name="description" content="Λόγος &amp; Αριθμός, ψυχοπαιδαγωγικό κέντρο στη Βούλα. Λογοθεραπεία, εργοθεραπεία, ειδική διαπαιδαγώγηση, ψυχολογική υποστήριξη, συμβουλευτική γονέων και ομαδικά προγράμματα για παιδιά και εφήβους.">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#232647">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Λόγος &amp; Αριθμός — Ψυχοπαιδαγωγικό Κέντρο">
+<meta property="og:description" content="Πρόληψη, αξιολόγηση και αποκατάσταση για παιδιά και εφήβους, με ολιστική υποστήριξη της οικογένειας.">
+<meta property="og:image" content="assets/hero.jpg">
+<link rel="icon" href="assets/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/hero.jpg" fetchpriority="high">
+<style>
+:root{
+  --ink:#232647; --ink-2:#2E3260; --ink-3:#454A85;
+  --paper:#FFFBF4; --paper-2:#FDF2E3; --card:#FFFFFF;
+  --sun:#EE8033; --sun-d:#D4661B; --teal:#2FA39B; --teal-l:#8FD3CE; --rose:#E96A83;
+  --body:#4A4E63; --muted:#7A7F94;
+  --line:rgba(35,38,71,.12); --line-d:rgba(255,255,255,.18);
+  --f:"Nunito",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --ease:cubic-bezier(.22,.61,.36,1);
+  --pad:clamp(3.6rem,7vw,7rem);
+  --wrap:min(1240px,90%);
+  --r:20px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--body);font-family:var(--f);font-weight:400;font-size:16.5px;line-height:1.75;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{margin:0;font-family:var(--f);font-weight:800;color:var(--ink);line-height:1.13;letter-spacing:-.015em}
+h1{font-size:clamp(2.5rem,1.5rem + 4vw,4.6rem)}
+h2{font-size:clamp(1.95rem,1.4rem + 2.2vw,3.1rem)}
+h3{font-size:clamp(1.22rem,1.1rem + .6vw,1.55rem)}
+p{margin:0 0 1.05em}p:last-child{margin-bottom:0}
+::selection{background:var(--sun);color:#fff}
+:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+.wrap{width:var(--wrap);margin-inline:auto}
+.sec{padding-block:var(--pad)}
+.eyebrow{display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:var(--sun-d);background:var(--paper-2);border-radius:100px;padding:.42rem 1rem;margin-bottom:1.15rem}
+.on-dark{background:var(--ink);color:#C6CAE6}
+.on-dark h1,.on-dark h2,.on-dark h3,.on-dark h4{color:#fff}
+.on-dark .eyebrow{color:#fff;background:rgba(255,255,255,.12)}
+.lead{font-size:clamp(1.04rem,1rem + .32vw,1.2rem)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;padding:.95rem 1.8rem;border-radius:100px;font-size:.86rem;font-weight:800;letter-spacing:.02em;border:2px solid transparent;cursor:pointer;transition:background .3s var(--ease),color .3s var(--ease),border-color .3s var(--ease),transform .3s var(--ease),box-shadow .3s var(--ease)}
+.btn-p{background:var(--sun);color:#fff;box-shadow:0 10px 26px rgba(238,128,51,.3)}
+.btn-p:hover{background:var(--sun-d);transform:translateY(-2px)}
+.btn-o{border-color:rgba(255,255,255,.55);color:#fff}
+.btn-o:hover{background:#fff;color:var(--ink);transform:translateY(-2px)}
+.btn-d{border-color:var(--ink);color:var(--ink)}
+.btn-d:hover{background:var(--ink);color:#fff;transform:translateY(-2px)}
+
+/* header */
+.hdr{position:fixed;inset:0 0 auto 0;z-index:70;padding-block:1rem;transition:background .45s var(--ease),box-shadow .45s var(--ease),padding .45s var(--ease)}
+.hdr-in{width:var(--wrap);margin-inline:auto;display:flex;align-items:center;justify-content:space-between;gap:1.2rem}
+.brand{display:flex;align-items:center;gap:.8rem;min-width:0}
+.brand img{width:50px;height:50px;object-fit:contain;border-radius:14px;background:#fff;padding:4px}
+.brand-tx{display:grid;line-height:1.15;min-width:0}
+.bn-short{display:none}
+.brand-tx b{font-weight:800;font-size:1.12rem;color:#fff;white-space:nowrap;transition:color .45s var(--ease)}
+.brand-tx span{font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.72);transition:color .45s var(--ease)}
+.nav{display:flex;align-items:center;gap:1.7rem}
+.nav a{font-size:.9rem;font-weight:700;color:rgba(255,255,255,.9);position:relative;padding-block:.3rem;transition:color .35s var(--ease)}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;border-radius:2px;background:var(--sun);transform:scaleX(0);transform-origin:0 50%;transition:transform .35s var(--ease)}
+.nav a:hover::after{transform:scaleX(1)}
+.hdr-right{display:flex;align-items:center;gap:.85rem}
+.lang{display:flex;align-items:center;gap:.15rem;border:2px solid rgba(255,255,255,.3);border-radius:100px;padding:2px;transition:border-color .45s var(--ease)}
+.lang button{display:flex;align-items:center;gap:.4rem;background:none;border:0;cursor:pointer;color:rgba(255,255,255,.85);font-family:var(--f);font-size:.72rem;font-weight:800;padding:.35rem .7rem;border-radius:100px;transition:background .3s var(--ease),color .3s var(--ease)}
+.lang button[aria-pressed="true"]{background:var(--sun);color:#fff}
+.flag{display:block;width:18px;height:12px;border-radius:3px;overflow:hidden;flex:none;line-height:0;box-shadow:0 0 0 1px rgba(0,0,0,.12)}
+.flag svg{display:block;width:100%;height:100%}
+.burger{display:none;width:46px;height:46px;border:2px solid rgba(255,255,255,.3);background:none;border-radius:14px;cursor:pointer;place-items:center;transition:border-color .45s var(--ease)}
+.burger span{display:block;width:18px;height:2px;border-radius:2px;background:#fff;margin:3px 0;transition:background .45s var(--ease)}
+.hdr.stuck{background:rgba(255,251,244,.95);backdrop-filter:saturate(180%) blur(14px);-webkit-backdrop-filter:saturate(180%) blur(14px);box-shadow:0 6px 26px rgba(35,38,71,.08);padding-block:.55rem}
+.hdr.stuck .brand-tx b{color:var(--ink)}
+.hdr.stuck .brand-tx span{color:var(--muted)}
+.hdr.stuck .nav a{color:var(--ink)}
+.hdr.stuck .lang{border-color:var(--line)}
+.hdr.stuck .lang button{color:var(--ink)}
+.hdr.stuck .lang button[aria-pressed="true"]{color:#fff}
+.hdr.stuck .burger{border-color:var(--line)}
+.hdr.stuck .burger span{background:var(--ink)}
+.mnav{position:fixed;inset:0;z-index:90;background:var(--ink);display:grid;grid-template-rows:auto 1fr auto;opacity:0;visibility:hidden;transition:opacity .4s var(--ease),visibility .4s}
+.mnav.open{opacity:1;visibility:visible}
+.mnav-top{display:flex;justify-content:flex-end;padding:1.1rem 5%}
+.mclose{width:50px;height:50px;border:2px solid var(--line-d);background:none;border-radius:16px;color:#fff;font-size:1.5rem;line-height:1;cursor:pointer;display:grid;place-items:center}
+.mnav nav{display:grid;align-content:center;gap:.2rem;padding:0 8%}
+.mnav nav a{font-size:clamp(1.6rem,6.5vw,2.2rem);font-weight:800;color:#fff;padding:.4rem 0;border-bottom:1px solid rgba(255,255,255,.1)}
+.mnav-foot{padding:1.6rem 8% 2.4rem;display:grid;gap:.4rem;color:var(--teal-l);font-size:.95rem}
+.mnav-foot a{color:#fff;font-weight:700}
+
+/* hero */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden;background:var(--ink)}
+.hero-media{position:absolute;inset:0;z-index:0}
+.hero-media img{width:100%;height:100%;object-fit:cover;object-position:50% 40%;will-change:transform;transform:scale(1.09);animation:heroIn 2.8s var(--ease) forwards}
+@keyframes heroIn{to{transform:scale(1)}}
+.hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,22,44,.72) 0%,rgba(20,22,44,.3) 32%,rgba(20,22,44,.66) 72%,rgba(20,22,44,.94) 100%)}
+.hero-in{position:relative;z-index:2;width:var(--wrap);margin-inline:auto;padding-block:9rem clamp(4.4rem,9vw,6.2rem)}
+.hero .tag{display:inline-block;font-size:.78rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:#fff;background:rgba(255,255,255,.15);border-radius:100px;padding:.45rem 1.05rem;margin-bottom:1.2rem;backdrop-filter:blur(6px)}
+.hero h1{color:#fff;max-width:17ch;text-wrap:balance;text-shadow:0 2px 40px rgba(0,0,0,.35)}
+.hero .lead{margin-top:1.4rem;max-width:58ch;color:rgba(238,240,250,.93)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:2.2rem}
+.scroll-cue{position:absolute;left:50%;bottom:1.5rem;transform:translateX(-50%);z-index:3;width:2px;border-radius:2px;height:52px;background:linear-gradient(180deg,transparent,rgba(255,255,255,.5));overflow:hidden}
+.scroll-cue::after{content:"";position:absolute;inset:0;background:#fff;animation:cue 2.4s var(--ease) infinite}
+@keyframes cue{0%{transform:translateY(-100%)}60%,100%{transform:translateY(100%)}}
+
+/* pillars */
+.pil{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(1rem,2.4vw,1.8rem);margin-top:-4.5rem;position:relative;z-index:5}
+.pil article{background:var(--card);border-radius:var(--r);padding:clamp(1.6rem,3vw,2.2rem);box-shadow:0 18px 46px rgba(35,38,71,.09);display:grid;gap:.6rem;align-content:start}
+.pil .dot{width:44px;height:44px;border-radius:14px;display:grid;place-items:center;font-weight:800;color:#fff;font-size:1.05rem;margin-bottom:.4rem}
+.pil article:nth-child(1) .dot{background:var(--sun)}
+.pil article:nth-child(2) .dot{background:var(--teal)}
+.pil article:nth-child(3) .dot{background:var(--rose)}
+.pil p{font-size:.96rem;margin:0}
+
+/* about */
+.abt{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(2.2rem,5vw,4.6rem);align-items:center}
+.abt figure{margin:0;border-radius:var(--r);overflow:hidden}
+.abt figure img{width:100%;height:auto;aspect-ratio:5/4;object-fit:cover}
+.vision{background:var(--paper-2);border-radius:var(--r);padding:clamp(1.4rem,3vw,2rem);margin-top:1.6rem;font-weight:600;color:var(--ink);font-size:1.05rem;line-height:1.6}
+
+/* services */
+.srv{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(1rem,2vw,1.5rem);margin-top:3rem}
+.srv article{background:var(--card);border-radius:var(--r);overflow:hidden;display:grid;grid-template-rows:auto 1fr;box-shadow:0 10px 30px rgba(35,38,71,.07);transition:transform .4s var(--ease),box-shadow .4s var(--ease)}
+.srv article:hover{transform:translateY(-5px);box-shadow:0 20px 46px rgba(35,38,71,.13)}
+.srv img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.srv .tx{padding:1.3rem 1.35rem 1.6rem;display:grid;gap:.55rem;align-content:start}
+.srv h3{font-size:1.16rem}
+.srv p{font-size:.93rem;margin:0}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--line-d);border-radius:var(--r);overflow:hidden;margin-top:3rem}
+.steps article{background:var(--ink);padding:clamp(1.6rem,3vw,2.3rem);display:grid;gap:.6rem;align-content:start}
+.steps b{font-size:2.2rem;font-weight:800;color:var(--teal-l);line-height:1}
+.steps p{font-size:.95rem;color:#C6CAE6;margin:0}
+
+/* chips */
+.chips{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:2.2rem}
+.chip{background:var(--card);border:2px solid var(--line);border-radius:100px;padding:.6rem 1.15rem;font-size:.92rem;font-weight:600;color:var(--ink);transition:border-color .3s var(--ease),transform .3s var(--ease)}
+.chip:hover{border-color:var(--teal);transform:translateY(-2px)}
+
+/* team */
+.team{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(1rem,2vw,1.5rem);margin-top:3rem}
+.team article{background:var(--card);border-radius:var(--r);padding:clamp(1.5rem,2.6vw,2rem);display:grid;gap:.5rem;align-content:start;box-shadow:0 10px 30px rgba(35,38,71,.06)}
+.team .mono{width:52px;height:52px;border-radius:16px;background:var(--paper-2);color:var(--sun-d);display:grid;place-items:center;font-weight:800;font-size:1.15rem;margin-bottom:.4rem}
+.team p{font-size:.94rem;margin:0}
+
+/* contact */
+.ct{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(2.2rem,5vw,4.4rem);align-items:start}
+.field{display:grid;gap:.4rem;margin-bottom:1rem}
+.field label{font-size:.78rem;font-weight:800;color:var(--ink)}
+.field input,.field textarea{font-family:var(--f);font-size:1rem;color:var(--ink);background:var(--card);border:2px solid var(--line);border-radius:14px;padding:.85rem 1rem;width:100%;transition:border-color .3s var(--ease)}
+.field textarea{min-height:140px;resize:vertical}
+.field input:focus,.field textarea:focus{border-color:var(--sun);outline:none}
+.hp{position:absolute;left:-9999px}
+.ct-list{display:grid;gap:.9rem;margin-top:2rem}
+.ct-list .row{background:var(--card);border-radius:16px;padding:1rem 1.2rem;display:grid;grid-template-columns:110px minmax(0,1fr);gap:1rem;font-size:1rem;box-shadow:0 8px 22px rgba(35,38,71,.05)}
+.ct-list .row b{font-size:.75rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);padding-top:.3em}
+.ct-list a:hover{color:var(--sun-d)}
+.note{margin-top:1rem;font-size:.88rem;color:var(--muted)}
+
+/* footer */
+.ft{background:var(--ink);color:#A8AEDA;padding-block:clamp(3rem,5vw,4.4rem) 0}
+.ft-top{display:grid;grid-template-columns:minmax(0,1.4fr) repeat(3,minmax(0,1fr));gap:clamp(1.8rem,4vw,3rem);padding-bottom:2.8rem;border-bottom:1px solid var(--line-d)}
+.ft h4{font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;color:#fff;font-weight:800;margin-bottom:1.1rem}
+.ft ul{list-style:none;margin:0;padding:0;display:grid;gap:.55rem;font-size:.95rem}
+.ft a:hover{color:#fff}
+.ft-brand{display:flex;align-items:center;gap:.8rem;margin-bottom:1.1rem}
+.ft-brand img{width:52px;height:52px;object-fit:contain;border-radius:14px;background:#fff;padding:4px}
+.ft-brand b{font-size:1.2rem;color:#fff;font-weight:800}
+.ft-bot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem;padding-block:1.5rem;font-size:.85rem}
+.ft-bot a{color:#fff}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:120;background:rgba(16,18,36,.96);display:grid;place-items:center;padding:clamp(1rem,4vw,3rem);opacity:0;visibility:hidden;transition:opacity .35s var(--ease),visibility .35s}
+.lb.open{opacity:1;visibility:visible}
+.lb img{max-width:100%;max-height:86vh;object-fit:contain;border-radius:16px}
+.lb-x{position:absolute;top:1rem;right:1rem;width:50px;height:50px;border:2px solid var(--line-d);background:none;color:#fff;font-size:1.5rem;line-height:1;cursor:pointer;border-radius:16px}
+.lb-cap{position:absolute;left:0;right:0;bottom:1.1rem;text-align:center;color:#B9BEE4;font-size:.9rem;padding-inline:1rem}
+
+.rv{opacity:0;transform:translateY(26px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.08s}.rv.d2{transition-delay:.16s}.rv.d3{transition-delay:.24s}.rv.d4{transition-delay:.32s}
+
+@media(max-width:1080px){
+  .nav{display:none}.burger{display:grid}
+  .srv{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .steps{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .abt,.ct{grid-template-columns:1fr}
+  .team{grid-template-columns:repeat(1,minmax(0,1fr))}
+  .ft-top{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .pil{grid-template-columns:1fr;margin-top:-3rem}
+}
+@media(max-width:720px){
+  .srv{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr}
+  .hero-in{padding-block:7.5rem 4rem}
+  .hero-cta .btn{width:100%}
+  .ft-top{grid-template-columns:1fr}
+  .ct-list .row{grid-template-columns:1fr;gap:.2rem}
+}
+/* mobile header: keep the lockup, the toggle and the burger from colliding */
+@media(max-width:900px){
+  .brand-tx span{display:none}
+}
+@media(max-width:640px){
+  .bn-long{display:none}
+  .bn-short{display:block}
+}
+@media(max-width:520px){
+  .lang button{font-size:0;gap:0;padding:.4rem .5rem}
+  .lang button .flag{width:22px;height:15px}
+  .brand img{width:40px;height:40px}
+  .brand{gap:.55rem}
+  .hdr-in{gap:.6rem}
+  .brand-tx b{font-size:.86rem}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .rv{opacity:1;transform:none;transition:none}
+  .hero-media img{animation:none;transform:none}
+  .scroll-cue::after{animation:none}
+  .srv article:hover{transform:none}
+}
+</style>
+</head>
+<body id="top">
+
+<header class="hdr" id="hdr">
+  <div class="hdr-in">
+    <a class="brand" href="#top" aria-label="Αρχική">
+      <img src="assets/logo.jpg" width="50" height="50" alt="Λογότυπο Λόγος και Αριθμός">
+      <span class="brand-tx">
+        <b class="bn-long" data-i18n="brand">Λόγος &amp; Αριθμός</b>
+        <b class="bn-short" data-i18n="brandShort">Λόγος &amp; Αριθμός</b>
+        <span data-i18n="brandSub">Ψυχοπαιδαγωγικό Κέντρο · Βούλα</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="Κύρια πλοήγηση">
+      <a href="#kentro" data-i18n="navAbout">Το Κέντρο</a>
+      <a href="#ypiresies" data-i18n="navServices">Υπηρεσίες</a>
+      <a href="#poreia" data-i18n="navHow">Πώς δουλεύουμε</a>
+      <a href="#se-poious" data-i18n="navWho">Σε ποιους</a>
+      <a href="#omada" data-i18n="navTeam">Η ομάδα</a>
+      <a href="#epikoinonia" data-i18n="navContact">Επικοινωνία</a>
+    </nav>
+    <div class="hdr-right">
+      <div class="lang" role="group" aria-label="Γλώσσα">
+        <button type="button" data-lang="el" aria-pressed="true" aria-label="Ελληνικά">
+          <span class="flag" aria-hidden="true"><svg viewBox="0 0 27 18" preserveAspectRatio="xMidYMid slice"><rect width="27" height="18" fill="#0d5eaf"/><g fill="#fff"><rect y="2" width="27" height="2"/><rect y="6" width="27" height="2"/><rect y="10" width="27" height="2"/><rect y="14" width="27" height="2"/></g><rect width="10" height="10" fill="#0d5eaf"/><g fill="#fff"><rect x="4" width="2" height="10"/><rect y="4" width="10" height="2"/></g></svg></span>ΕΛ
+        </button>
+        <button type="button" data-lang="en" aria-pressed="false" aria-label="English">
+          <span class="flag" aria-hidden="true"><svg viewBox="0 0 60 30" preserveAspectRatio="xMidYMid slice"><clipPath id="ukc"><path d="M0 0h60v30H0z"/></clipPath><g clip-path="url(#ukc)"><path d="M0 0v30h60V0z" fill="#012169"/><path d="M0 0l60 30m0-30L0 30" stroke="#fff" stroke-width="6"/><path d="M0 0l60 30m0-30L0 30" stroke="#C8102E" stroke-width="4"/><path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/><path d="M30 0v30M0 15h60" stroke="#C8102E" stroke-width="6"/></g></svg></span>EN
+        </button>
+      </div>
+      <button class="burger" id="burger" aria-label="Μενού" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="mnav" id="mnav" role="dialog" aria-modal="true" aria-label="Μενού">
+  <div class="mnav-top"><button class="mclose" id="mclose" aria-label="Κλείσιμο">&#10005;</button></div>
+  <nav>
+    <a href="#kentro" data-i18n="navAbout">Το Κέντρο</a>
+    <a href="#ypiresies" data-i18n="navServices">Υπηρεσίες</a>
+    <a href="#poreia" data-i18n="navHow">Πώς δουλεύουμε</a>
+    <a href="#se-poious" data-i18n="navWho">Σε ποιους</a>
+    <a href="#omada" data-i18n="navTeam">Η ομάδα</a>
+    <a href="#epikoinonia" data-i18n="navContact">Επικοινωνία</a>
+  </nav>
+  <div class="mnav-foot">
+    <a href="tel:+302104408008">210 440 8008</a>
+    <a href="mailto:kentrologosarithmos@gmail.com">kentrologosarithmos@gmail.com</a>
+    <span data-i18n="addr">Καλύμνου 1, Βούλα 166 73</span>
+  </div>
+</div>
+
+<section class="hero" aria-labelledby="h1">
+  <div class="hero-media" aria-hidden="true">
+    <img src="assets/hero.jpg" width="2000" height="1333" fetchpriority="high" decoding="async" alt="">
+  </div>
+  <div class="hero-in">
+    <span class="tag rv in" data-i18n="heroTag">Πρόληψη · Αξιολόγηση · Αποκατάσταση</span>
+    <h1 id="h1" class="rv in d1" data-i18n="heroTitle">Κάθε παιδί μαθαίνει με τον δικό του τρόπο.</h1>
+    <p class="lead rv in d2" data-i18n="heroLead">Το «Λόγος &amp; Αριθμός» είναι ένα σύγχρονο ψυχοπαιδαγωγικό κέντρο στη Βούλα. Μια διεπιστημονική ομάδα δίπλα σε παιδιά, εφήβους και τις οικογένειές τους — με εξατομικευμένα προγράμματα και τεκμηριωμένες μεθόδους.</p>
+    <div class="hero-cta rv in d3">
+      <a class="btn btn-p" href="#epikoinonia" data-i18n="ctaBook">Κλείστε αξιολόγηση</a>
+      <a class="btn btn-o" href="#ypiresies" data-i18n="ctaServices">Δείτε τις υπηρεσίες</a>
+    </div>
+  </div>
+  <div class="scroll-cue" aria-hidden="true"></div>
+</section>
+
+<section class="wrap" aria-label="Οι τρεις πυλώνες">
+  <div class="pil">
+    <article class="rv"><span class="dot" aria-hidden="true">1</span><h3 data-i18n="pil1t">Διεπιστημονική ομάδα</h3><p data-i18n="pil1d">Παιδοψυχίατρος, λογοθεραπευτής, εργοθεραπευτής, ψυχολόγος, ειδικός παιδαγωγός και κοινωνικός λειτουργός, στον ίδιο χώρο και στο ίδιο πλάνο.</p></article>
+    <article class="rv d1"><span class="dot" aria-hidden="true">2</span><h3 data-i18n="pil2t">Εξατομικευμένο πρόγραμμα</h3><p data-i18n="pil2d">Κάθε πρόγραμμα προσαρμόζεται στις ικανότητες, στον τρόπο μάθησης και στις θεραπευτικές ανάγκες του συγκεκριμένου παιδιού.</p></article>
+    <article class="rv d2"><span class="dot" aria-hidden="true">3</span><h3 data-i18n="pil3t">Η οικογένεια μέσα</h3><p data-i18n="pil3d">Ενημέρωση και καθοδήγηση των γονέων σε όλη τη διάρκεια — γιατί η πρόοδος συνεχίζεται και στο σπίτι.</p></article>
+  </div>
+</section>
+
+<section class="sec" id="kentro">
+  <div class="wrap abt">
+    <figure class="rv">
+      <img src="assets/about.jpg" width="1600" height="1280" loading="lazy" alt="Παιδί σε συνεδρία στο κέντρο Λόγος και Αριθμός" data-lb data-cap="Το κέντρο «Λόγος &amp; Αριθμός» στη Βούλα">
+    </figure>
+    <div class="rv d1">
+      <span class="eyebrow" data-i18n="abEyebrow">Το Κέντρο μας</span>
+      <h2 data-i18n="abTitle">Ένας χώρος φτιαγμένος για να νιώθει κανείς ασφάλεια.</h2>
+      <p class="lead" style="margin-top:1.3rem" data-i18n="abP1">Το «Λόγος &amp; Αριθμός» είναι ένα εξειδικευμένο θεραπευτικό κέντρο για παιδιά και εφήβους στη Βούλα. Λειτουργεί ως σύγχρονος χώρος πρόληψης, αξιολόγησης και αποκατάστασης, με ολιστική υποστήριξη που φτάνει και στην οικογένεια.</p>
+      <p data-i18n="abP2">Η θεραπευτική δουλειά ακολουθεί εξατομικευμένη, τεκμηριωμένη μεθοδολογία. Πριν ξεκινήσει οτιδήποτε, προηγείται αξιολόγηση· και όσο το πρόγραμμα τρέχει, επανεξετάζεται με βάση την πραγματική πρόοδο, όχι το ημερολόγιο.</p>
+      <div class="vision" data-i18n="abVision">Το ζητούμενο είναι ένα υποστηρικτικό περιβάλλον που προάγει την εξέλιξη, την αυτονομία και την ποιότητα ζωής.</div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="ypiresies" style="background:var(--paper-2)">
+  <div class="wrap">
+    <div style="max-width:62ch">
+      <span class="eyebrow rv" data-i18n="srvEyebrow">Υπηρεσίες</span>
+      <h2 class="rv d1" data-i18n="srvTitle">Οκτώ υπηρεσίες, ένα πλάνο ανά παιδί.</h2>
+      <p class="lead rv d2" style="margin-top:1.3rem" data-i18n="srvLead">Οι υπηρεσίες συνδυάζονται μεταξύ τους: σπάνια χρειάζεται μόνο μία, και ποτέ δεν δουλεύουν απομονωμένα η μία από την άλλη.</p>
+    </div>
+    <div class="srv">
+      <article class="rv"><img src="assets/s-logo.jpg" loading="lazy" alt="Συνεδρία λογοθεραπείας με παιδί" data-lb data-cap="Λογοθεραπεία"><div class="tx"><h3 data-i18n="s1t">Λογοθεραπεία</h3><p data-i18n="s1d">Αξιολόγηση και αντιμετώπιση των διαταραχών λόγου, ομιλίας και επικοινωνίας, με εξατομικευμένο πρόγραμμα λογοθεραπευτικής αγωγής και στενή συνεργασία με γονείς και εκπαιδευτικούς. Ατομικές συνεδρίες.</p></div></article>
+      <article class="rv d1"><img src="assets/s-ergo.jpg" loading="lazy" alt="Εργοθεραπευτική δραστηριότητα με παιχνίδι" data-lb data-cap="Εργοθεραπεία"><div class="tx"><h3 data-i18n="s2t">Εργοθεραπεία</h3><p data-i18n="s2d">Μέσα από το παιχνίδι, ο εργοθεραπευτής αξιολογεί και ενισχύει λεπτή και αδρή κινητικότητα, γνωστικές ικανότητες και οργάνωση, με στόχο τη βέλτιστη λειτουργικότητα και ανεξαρτησία στην καθημερινότητα.</p></div></article>
+      <article class="rv d2"><img src="assets/s-eidiki.jpg" loading="lazy" alt="Παιδί που γράφει με την υποστήριξη ειδικού παιδαγωγού" data-lb data-cap="Ειδική διαπαιδαγώγηση"><div class="tx"><h3 data-i18n="s3t">Ειδική διαπαιδαγώγηση</h3><p data-i18n="s3d">Βελτίωση των γνωστικών δεξιοτήτων και προετοιμασία για τη σχολική ένταξη: προγραφή, ανάγνωση, ορθογραφία, προμαθηματικές έννοιες και μαθηματική σκέψη. Ατομικές συνεδρίες.</p></div></article>
+      <article class="rv d3"><img src="assets/s-psy.jpg" loading="lazy" alt="Παιδί σε συνεδρία ψυχολογικής υποστήριξης" data-lb data-cap="Ψυχολογική υποστήριξη"><div class="tx"><h3 data-i18n="s4t">Ψυχολογική υποστήριξη</h3><p data-i18n="s4d">Ο ψυχολόγος βοηθά το παιδί να διαχειριστεί δυσκολίες και συναισθήματα, να αναγνωρίσει τις δυνατότητές του και να λύνει προβλήματα, με ενεργή συμμετοχή της οικογένειας.</p></div></article>
+      <article class="rv"><img src="assets/s-goneis.jpg" loading="lazy" alt="Συνάντηση συμβουλευτικής γονέων" data-lb data-cap="Συμβουλευτική γονέων"><div class="tx"><h3 data-i18n="s5t">Συμβουλευτική γονέων</h3><p data-i18n="s5d">Ο κοινωνικός λειτουργός λαμβάνει το κοινωνικό ιστορικό, συμβουλεύει και κατευθύνει τους γονείς — από τη διαχείριση της καθημερινότητας μέχρι τη συνεννόηση με το σχολείο.</p></div></article>
+      <article class="rv d1"><img src="assets/s-omadika.jpg" loading="lazy" alt="Ομαδικό πρόγραμμα με παιδιά" data-lb data-cap="Ομαδικά προγράμματα"><div class="tx"><h3 data-i18n="s6t">Ομαδικά προγράμματα</h3><p data-i18n="s6d">Δομημένες ομάδες όπου δουλεύονται οι κοινωνικές δεξιότητες, η συνεργασία και η ρύθμιση συναισθήματος — εκεί όπου η ατομική συνεδρία δεν φτάνει από μόνη της.</p></div></article>
+      <article class="rv d2"><img src="assets/s-fylaksi.jpg" loading="lazy" alt="Τμήμα δημιουργικής απασχόλησης" data-lb data-cap="Φύλαξη και δημιουργική απασχόληση"><div class="tx"><h3 data-i18n="s7t">Φύλαξη &amp; δημιουργική απασχόληση</h3><p data-i18n="s7d">Τμήματα φύλαξης με ουσιαστικό περιεχόμενο: μελέτη, δημιουργικές δραστηριότητες και εποπτεία από εξειδικευμένο προσωπικό, στο ίδιο ασφαλές περιβάλλον.</p></div></article>
+      <article class="rv d3"><img src="assets/s-camp.jpg" loading="lazy" alt="Εναλλακτικό θεραπευτικό πρόγραμμα σε camp" data-lb data-cap="Εναλλακτικά θεραπευτικά προγράμματα"><div class="tx"><h3 data-i18n="s8t">Εναλλακτικά θεραπευτικά προγράμματα</h3><p data-i18n="s8d">Θεραπεία μέσω τέχνης, μουσικής και κίνησης, καθώς και θεραπευτικά camp — μορφές έκφρασης που ανοίγουν δρόμο εκεί όπου ο λόγος δυσκολεύει.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="sec on-dark" id="poreia">
+  <div class="wrap">
+    <div style="max-width:62ch">
+      <span class="eyebrow rv" data-i18n="hoEyebrow">Πώς δουλεύουμε</span>
+      <h2 class="rv d1" data-i18n="hoTitle">Τέσσερα βήματα, με σαφή σειρά.</h2>
+    </div>
+    <div class="steps">
+      <article class="rv"><b>01</b><h3 data-i18n="h1t">Πρώτη επικοινωνία</h3><p data-i18n="h1d">Μια σύντομη συζήτηση με τους γονείς για το τι παρατηρούν, τι λέει το σχολείο και τι έχει προηγηθεί.</p></article>
+      <article class="rv d1"><b>02</b><h3 data-i18n="h2t">Αξιολόγηση</h3><p data-i18n="h2d">Δομημένη αξιολόγηση από τον αρμόδιο ειδικό, με σταθμισμένα εργαλεία και παρατήρηση μέσα στο παιχνίδι.</p></article>
+      <article class="rv d2"><b>03</b><h3 data-i18n="h3t">Σχεδιασμός &amp; θεραπεία</h3><p data-i18n="h3d">Εξατομικευμένο πρόγραμμα με συγκεκριμένους στόχους, σε ατομικές ή ομαδικές συνεδρίες.</p></article>
+      <article class="rv d3"><b>04</b><h3 data-i18n="h4t">Επανεκτίμηση</h3><p data-i18n="h4d">Τακτική επανεξέταση των στόχων, ενημέρωση των γονέων και προσαρμογή του πλάνου όπου χρειάζεται.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="se-poious">
+  <div class="wrap">
+    <div style="max-width:62ch">
+      <span class="eyebrow rv" data-i18n="whEyebrow">Σε ποιους απευθυνόμαστε</span>
+      <h2 class="rv d1" data-i18n="whTitle">Παιδιά και έφηβοι — και οι άνθρωποι γύρω τους.</h2>
+      <p class="lead rv d2" style="margin-top:1.3rem" data-i18n="whLead">Δεν χρειάζεται διάγνωση για να έρθετε. Αν κάτι σας ανησυχεί στην εξέλιξη, τον λόγο, τη μάθηση ή τη συμπεριφορά του παιδιού, η αξιολόγηση θα το ξεκαθαρίσει.</p>
+    </div>
+    <div class="chips rv d3">
+      <span class="chip" data-i18n="w1">Διαταραχές λόγου &amp; ομιλίας</span>
+      <span class="chip" data-i18n="w2">Μαθησιακές δυσκολίες</span>
+      <span class="chip" data-i18n="w3">ΔΕΠ-Υ</span>
+      <span class="chip" data-i18n="w4">Διαταραχή αυτιστικού φάσματος</span>
+      <span class="chip" data-i18n="w5">Δυσκολίες αισθητηριακής επεξεργασίας</span>
+      <span class="chip" data-i18n="w6">Ελλείμματα κοινωνικών δεξιοτήτων</span>
+      <span class="chip" data-i18n="w7">Ψυχοσυναισθηματικές δυσκολίες</span>
+      <span class="chip" data-i18n="w8">Δυσκολίες σχολικής προσαρμογής</span>
+      <span class="chip" data-i18n="w9">Καθυστέρηση αναπτυξιακών σταθμών</span>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="omada" style="background:var(--paper-2)">
+  <div class="wrap">
+    <div style="max-width:62ch">
+      <span class="eyebrow rv" data-i18n="teEyebrow">Η ομάδα</span>
+      <h2 class="rv d1" data-i18n="teTitle">Έξι ειδικότητες που μιλούν μεταξύ τους.</h2>
+      <p class="lead rv d2" style="margin-top:1.3rem" data-i18n="teLead">Η διεπιστημονική ομάδα συνεδριάζει για κάθε παιδί, ώστε ο λογοθεραπευτής να ξέρει τι δουλεύει ο εργοθεραπευτής και ο ψυχολόγος τι συμβαίνει στο σπίτι.</p>
+    </div>
+    <div class="team">
+      <article class="rv"><span class="mono" aria-hidden="true">Π</span><h3 data-i18n="t1t">Παιδοψυχίατρος</h3><p data-i18n="t1d">Διαγνωστική εκτίμηση, ιατρική παρακολούθηση και συντονισμός του θεραπευτικού πλάνου.</p></article>
+      <article class="rv d1"><span class="mono" aria-hidden="true">Λ</span><h3 data-i18n="t2t">Λογοθεραπευτής</h3><p data-i18n="t2d">Αξιολόγηση και θεραπεία λόγου, ομιλίας, φωνής, κατάποσης και επικοινωνίας.</p></article>
+      <article class="rv d2"><span class="mono" aria-hidden="true">Ε</span><h3 data-i18n="t3t">Εργοθεραπευτής</h3><p data-i18n="t3d">Κινητικές δεξιότητες, αισθητηριακή επεξεργασία, οργάνωση και αυτονομία στην καθημερινότητα.</p></article>
+      <article class="rv"><span class="mono" aria-hidden="true">Ψ</span><h3 data-i18n="t4t">Ψυχολόγος</h3><p data-i18n="t4d">Ψυχοσυναισθηματική υποστήριξη του παιδιού και συμβουλευτική της οικογένειας.</p></article>
+      <article class="rv d1"><span class="mono" aria-hidden="true">ΕΠ</span><h3 data-i18n="t5t">Ειδικός παιδαγωγός</h3><p data-i18n="t5d">Μαθησιακή υποστήριξη, σχολική ετοιμότητα και στρατηγικές μελέτης.</p></article>
+      <article class="rv d2"><span class="mono" aria-hidden="true">ΚΛ</span><h3 data-i18n="t6t">Κοινωνικός λειτουργός</h3><p data-i18n="t6d">Κοινωνικό ιστορικό, σύνδεση με το σχολείο και τους φορείς, στήριξη των γονέων.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="epikoinonia">
+  <div class="wrap ct">
+    <div class="rv">
+      <span class="eyebrow" data-i18n="ctEyebrow">Επικοινωνία</span>
+      <h2 data-i18n="ctTitle">Ας ξεκινήσουμε με μια κουβέντα.</h2>
+      <p class="lead" style="margin-top:1.3rem" data-i18n="ctLead">Γράψτε μας τι σας απασχολεί και την ηλικία του παιδιού. Θα επικοινωνήσουμε για να κανονίσουμε την πρώτη συνάντηση.</p>
+      <div class="ct-list">
+        <div class="row"><b data-i18n="lblAddr">Διεύθυνση</b><span data-i18n="addr">Καλύμνου 1, Βούλα 166 73</span></div>
+        <div class="row"><b data-i18n="lblPhone">Τηλέφωνο</b><span><a href="tel:+302104408008">210 440 8008</a></span></div>
+        <div class="row"><b>Email</b><span><a href="mailto:kentrologosarithmos@gmail.com">kentrologosarithmos@gmail.com</a></span></div>
+        <div class="row"><b data-i18n="lblSocial">Κοινωνικά</b><span><a href="https://www.facebook.com/logosarithmos" target="_blank" rel="noopener">Facebook</a></span></div>
+        <div class="row"><b data-i18n="lblMapL">Χάρτης</b><span><a href="https://maps.google.com/?q=Καλύμνου+1+Βούλα" target="_blank" rel="noopener" data-i18n="lblMap">Άνοιγμα στον χάρτη</a></span></div>
+      </div>
+    </div>
+    <form class="rv d1" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="contact">
+      <p class="hp"><label>Μην συμπληρώσετε: <input name="bot-field"></label></p>
+      <div class="field"><label for="n" data-i18n="fName">Ονοματεπώνυμο</label><input id="n" name="name" type="text" required autocomplete="name"></div>
+      <div class="field"><label for="e" data-i18n="fEmail">Email</label><input id="e" name="email" type="email" required autocomplete="email"></div>
+      <div class="field"><label for="t" data-i18n="fPhone">Τηλέφωνο</label><input id="t" name="phone" type="tel" autocomplete="tel"></div>
+      <div class="field"><label for="m" data-i18n="fMsg">Πείτε μας λίγα λόγια</label><textarea id="m" name="message" required></textarea></div>
+      <button class="btn btn-p" type="submit" data-i18n="fSend">Αποστολή</button>
+      <p class="note" data-i18n="fNote">Τα στοιχεία σας χρησιμοποιούνται αποκλειστικά για να απαντηθεί το αίτημά σας και παραμένουν εμπιστευτικά.</p>
+    </form>
+  </div>
+</section>
+
+<footer class="ft">
+  <div class="wrap">
+    <div class="ft-top">
+      <div>
+        <a class="ft-brand" href="#top">
+          <img src="assets/logo.jpg" width="52" height="52" alt="Λογότυπο Λόγος και Αριθμός">
+          <b data-i18n="brand">Λόγος &amp; Αριθμός</b>
+        </a>
+        <p style="font-size:.95rem;max-width:40ch" data-i18n="ftAbout">Ψυχοπαιδαγωγικό κέντρο στη Βούλα. Πρόληψη, αξιολόγηση και αποκατάσταση για παιδιά και εφήβους, με την οικογένεια μέσα στη διαδικασία.</p>
+      </div>
+      <div>
+        <h4 data-i18n="ftNav">Πλοήγηση</h4>
+        <ul>
+          <li><a href="#kentro" data-i18n="navAbout">Το Κέντρο</a></li>
+          <li><a href="#ypiresies" data-i18n="navServices">Υπηρεσίες</a></li>
+          <li><a href="#poreia" data-i18n="navHow">Πώς δουλεύουμε</a></li>
+          <li><a href="#se-poious" data-i18n="navWho">Σε ποιους</a></li>
+          <li><a href="#omada" data-i18n="navTeam">Η ομάδα</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="ftServices">Υπηρεσίες</h4>
+        <ul>
+          <li data-i18n="s1t">Λογοθεραπεία</li>
+          <li data-i18n="s2t">Εργοθεραπεία</li>
+          <li data-i18n="s3t">Ειδική διαπαιδαγώγηση</li>
+          <li data-i18n="s4t">Ψυχολογική υποστήριξη</li>
+          <li data-i18n="s5t">Συμβουλευτική γονέων</li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="ftContact">Επικοινωνία</h4>
+        <ul>
+          <li data-i18n="addr">Καλύμνου 1, Βούλα 166 73</li>
+          <li><a href="tel:+302104408008">210 440 8008</a></li>
+          <li><a href="mailto:kentrologosarithmos@gmail.com">kentrologosarithmos@gmail.com</a></li>
+          <li><a href="https://www.facebook.com/logosarithmos" target="_blank" rel="noopener">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ft-bot">
+      <span data-i18n="ftRights">© <span id="yr"></span> Λόγος &amp; Αριθμός. Με επιφύλαξη παντός δικαιώματος.</span>
+      <span>Designed by <a href="https://advonmedia.com" target="_blank" rel="noopener">Advon Media</a></span>
+    </div>
+  </div>
+</footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Προβολή εικόνας">
+  <button class="lb-x" id="lbx" aria-label="Κλείσιμο">&#10005;</button>
+  <img id="lbimg" src="" alt="">
+  <div class="lb-cap" id="lbcap"></div>
+</div>
+
+<script>
+window.EN={
+ brand:"Logos &amp; Arithmos", brandShort:"Logos &amp; Arithmos", brandSub:"Psychopedagogical Centre · Voula",
+ navAbout:"The Centre", navServices:"Services", navHow:"How we work", navWho:"Who we help", navTeam:"The team", navContact:"Contact",
+ heroTag:"Prevention · Assessment · Rehabilitation",
+ heroTitle:"Every child learns in their own way.",
+ heroLead:"Logos &amp; Arithmos is a modern psychopedagogical centre in Voula. An interdisciplinary team alongside children, adolescents and their families — with individualised programmes and evidence-based methods.",
+ ctaBook:"Book an assessment", ctaServices:"See the services",
+ pil1t:"An interdisciplinary team", pil1d:"Child psychiatrist, speech and language therapist, occupational therapist, psychologist, special educator and social worker, in one place and on one plan.",
+ pil2t:"An individual programme", pil2d:"Every programme is adapted to the abilities, learning style and therapeutic needs of that particular child.",
+ pil3t:"The family included", pil3d:"Information and guidance for parents throughout — because progress carries on at home.",
+ abEyebrow:"The Centre", abTitle:"A space built so that a child feels safe.",
+ abP1:"Logos &amp; Arithmos is a specialist therapeutic centre for children and adolescents in Voula. It operates as a modern space for prevention, assessment and rehabilitation, with holistic support that extends to the family.",
+ abP2:"The therapeutic work follows an individualised, evidence-based methodology. Nothing begins before an assessment; and while the programme runs, it is reviewed against real progress rather than the calendar.",
+ abVision:"What we are after is a supportive environment that promotes development, independence and quality of life.",
+ srvEyebrow:"Services", srvTitle:"Eight services, one plan per child.",
+ srvLead:"The services combine: rarely is just one needed, and they never work in isolation from one another.",
+ s1t:"Speech &amp; language therapy", s1d:"Assessment and treatment of speech, language and communication disorders, with an individualised therapy programme and close cooperation with parents and teachers. Individual sessions.",
+ s2t:"Occupational therapy", s2d:"Through play, the occupational therapist assesses and builds fine and gross motor skills, cognitive ability and organisation, aiming at the best possible function and independence in daily life.",
+ s3t:"Special education", s3d:"Building cognitive skills and preparing for school: pre-writing, reading, spelling, pre-mathematical concepts and mathematical thinking. Individual sessions.",
+ s4t:"Psychological support", s4d:"The psychologist helps the child manage difficulties and emotions, recognise their strengths and solve problems, with the family actively involved.",
+ s5t:"Parent counselling", s5d:"The social worker takes the social history, advises and guides parents — from managing daily life to liaising with the school.",
+ s6t:"Group programmes", s6d:"Structured groups working on social skills, cooperation and emotional regulation — where an individual session alone does not reach.",
+ s7t:"Childcare &amp; creative activities", s7d:"Supervised sessions with real content: homework, creative activities and oversight by trained staff, in the same safe environment.",
+ s8t:"Alternative therapeutic programmes", s8d:"Therapy through art, music and movement, along with therapeutic camps — forms of expression that open a way where words are hard.",
+ hoEyebrow:"How we work", hoTitle:"Four steps, in a clear order.",
+ h1t:"First contact", h1d:"A short conversation with the parents about what they notice, what the school says and what has come before.",
+ h2t:"Assessment", h2d:"A structured assessment by the relevant specialist, with standardised tools and observation during play.",
+ h3t:"Planning &amp; therapy", h3d:"An individualised programme with defined goals, in individual or group sessions.",
+ h4t:"Review", h4d:"Regular review of the goals, updates for the parents and adjustment of the plan where needed.",
+ whEyebrow:"Who we help", whTitle:"Children and adolescents — and the people around them.",
+ whLead:"You do not need a diagnosis to come. If something concerns you about your child's development, speech, learning or behaviour, the assessment will make it clear.",
+ w1:"Speech &amp; language disorders", w2:"Learning difficulties", w3:"ADHD", w4:"Autism spectrum disorder",
+ w5:"Sensory processing difficulties", w6:"Social skills deficits", w7:"Psycho-emotional difficulties",
+ w8:"Difficulties adjusting to school", w9:"Delayed developmental milestones",
+ teEyebrow:"The team", teTitle:"Six disciplines that talk to each other.",
+ teLead:"The interdisciplinary team meets over every child, so the speech therapist knows what the occupational therapist is working on and the psychologist knows what is happening at home.",
+ t1t:"Child psychiatrist", t1d:"Diagnostic assessment, medical follow-up and coordination of the therapeutic plan.",
+ t2t:"Speech &amp; language therapist", t2d:"Assessment and treatment of speech, language, voice, swallowing and communication.",
+ t3t:"Occupational therapist", t3d:"Motor skills, sensory processing, organisation and independence in daily life.",
+ t4t:"Psychologist", t4d:"Psycho-emotional support for the child and counselling for the family.",
+ t5t:"Special educator", t5d:"Learning support, school readiness and study strategies.",
+ t6t:"Social worker", t6d:"Social history, liaison with school and services, support for parents.",
+ ctEyebrow:"Contact", ctTitle:"Let's start with a conversation.",
+ ctLead:"Write to us about what concerns you and your child's age. We will get in touch to arrange the first meeting.",
+ addr:"1 Kalymnou St, Voula 166 73",
+ lblAddr:"Address", lblPhone:"Telephone", lblSocial:"Social", lblMapL:"Map", lblMap:"Open in maps",
+ fName:"Full name", fEmail:"Email", fPhone:"Telephone", fMsg:"Tell us a little", fSend:"Send",
+ fNote:"Your details are used solely to answer your enquiry and are kept confidential.",
+ ftAbout:"A psychopedagogical centre in Voula. Prevention, assessment and rehabilitation for children and adolescents, with the family inside the process.",
+ ftNav:"Navigation", ftServices:"Services", ftContact:"Contact",
+ ftRights:"© <span id=\"yr\"></span> Logos &amp; Arithmos. All rights reserved."
+};
+(function(){
+  var d=document, EL={}, reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  d.querySelectorAll('[data-i18n]').forEach(function(el){ var k=el.getAttribute('data-i18n'); if(!(k in EL)) EL[k]=el.innerHTML; });
+  var META={el:{title:"Λόγος & Αριθμός — Ψυχοπαιδαγωγικό Κέντρο | Βούλα"},en:{title:"Logos & Arithmos — Psychopedagogical Centre | Voula"}};
+  function apply(l){
+    var dict = l==='en' ? window.EN : EL;
+    d.querySelectorAll('[data-i18n]').forEach(function(el){
+      var k=el.getAttribute('data-i18n'), v=dict[k]; if(v===undefined) v=EL[k];
+      if(v!==undefined) el.innerHTML=v;
+    });
+    d.documentElement.lang=l; d.title=META[l].title;
+    var y=d.getElementById('yr'); if(y) y.textContent=new Date().getFullYear();
+    d.querySelectorAll('.lang button').forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.lang===l)); });
+    try{ localStorage.setItem('la-lang', l); }catch(e){}
+  }
+  d.querySelectorAll('.lang button').forEach(function(b){ b.addEventListener('click', function(){ apply(b.dataset.lang); }); });
+  d.getElementById('yr').textContent=new Date().getFullYear();
+  try{ if(localStorage.getItem('la-lang')==='en') apply('en'); }catch(e){}
+
+  var hdr=d.getElementById('hdr');
+  function onScroll(){ hdr.classList.toggle('stuck', window.scrollY>60); }
+  onScroll(); addEventListener('scroll', onScroll, {passive:true});
+
+  var mnav=d.getElementById('mnav');
+  function setNav(o){ mnav.classList.toggle('open',o); d.body.style.overflow=o?'hidden':''; d.getElementById('burger').setAttribute('aria-expanded',o); }
+  d.getElementById('burger').addEventListener('click',function(){setNav(true)});
+  d.getElementById('mclose').addEventListener('click',function(){setNav(false)});
+  mnav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){setNav(false)})});
+
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} })},{rootMargin:'0px 0px -8% 0px',threshold:.08});
+  d.querySelectorAll('.rv').forEach(function(el){ if(!el.classList.contains('in')) io.observe(el); });
+
+  var hi=d.querySelector('.hero-media img');
+  if(hi && !reduced){ var t=false;
+    addEventListener('scroll',function(){ if(t)return; t=true; requestAnimationFrame(function(){ var y=window.scrollY; if(y<window.innerHeight) hi.style.transform='translate3d(0,'+(y*0.15).toFixed(1)+'px,0)'; t=false; }); },{passive:true}); }
+
+  var lb=d.getElementById('lb'), lbimg=d.getElementById('lbimg'), lbcap=d.getElementById('lbcap');
+  function open(src,alt,cap){ lbimg.src=src; lbimg.alt=alt||''; lbcap.textContent=cap||''; lb.classList.add('open'); d.body.style.overflow='hidden'; }
+  function close(){ lb.classList.remove('open'); d.body.style.overflow=''; setTimeout(function(){lbimg.src=''},350); }
+  d.addEventListener('click',function(e){
+    var im=e.target.closest('img[data-lb]');
+    if(im){ e.preventDefault(); open(im.currentSrc||im.src, im.alt, im.getAttribute('data-cap')); }
+  });
+  d.getElementById('lbx').addEventListener('click',close);
+  lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
+  addEventListener('keydown',function(e){ if(e.key==='Escape'){ close(); setNav(false); } });
+})();
+</script>
+</body>
+</html>
