@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="el">
+<html lang="el" class="no-js">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Λόγος &amp; Αριθμός — Ψυχοπαιδαγωγικό Κέντρο | Βούλα</title>
 <meta name="description" content="Λόγος &amp; Αριθμός, ψυχοπαιδαγωγικό κέντρο στη Βούλα. Λογοθεραπεία, εργοθεραπεία, ειδική διαπαιδαγώγηση, ψυχολογική υποστήριξη, συμβουλευτική γονέων και ομαδικά προγράμματα για παιδιά και εφήβους.">
 <meta name="robots" content="noindex,nofollow">
-<meta name="theme-color" content="#232647">
+<meta name="theme-color" content="#2E2566">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Λόγος &amp; Αριθμός — Ψυχοπαιδαγωγικό Κέντρο">
 <meta property="og:description" content="Πρόληψη, αξιολόγηση και αποκατάσταση για παιδιά και εφήβους, με ολιστική υποστήριξη της οικογένειας.">
@@ -14,70 +14,113 @@
 <link rel="icon" href="assets/logo.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="assets/hero.jpg" fetchpriority="high">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;800&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/hero.webp" imagesrcset="assets/hero-narrow.webp 1080w, assets/hero.webp 1900w" imagesizes="100vw" fetchpriority="high">
+<script>document.documentElement.className='js';</script>
 <style>
+/* ================================================================
+   Λόγος & Αριθμός — Ψυχοπαιδαγωγικό Κέντρο, Βούλα
+   Design System v2 · Manrope (Greek-native, geometric, warm)
+   Palette from the balloon logo: plum ink, sun orange, a touch of rose
+   Signature interaction: the room explorer (every service = a room)
+   Ambient: the hero Ken Burns, once
+   ================================================================ */
 :root{
-  --ink:#232647; --ink-2:#2E3260; --ink-3:#454A85;
-  --paper:#FFFBF4; --paper-2:#FDF2E3; --card:#FFFFFF;
-  --sun:#EE8033; --sun-d:#D4661B; --teal:#2FA39B; --teal-l:#8FD3CE; --rose:#E96A83;
-  --body:#4A4E63; --muted:#7A7F94;
-  --line:rgba(35,38,71,.12); --line-d:rgba(255,255,255,.18);
-  --f:"Nunito",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-  --ease:cubic-bezier(.22,.61,.36,1);
-  --pad:clamp(3.6rem,7vw,7rem);
+  --ink:#2E2566; --ink-2:#3A2F7C; --ink-3:#4B3F9A;
+  --paper:#FFF9F1; --paper-2:#FBEEDD; --card:#FFFFFF;
+  --sun:#F28C28; --sun-d:#D26F12; --sun-l:#FFD9B5; --rose:#E4507A; --mint:#2FA39B;
+  --body:#4B4A66; --muted:#7C7B94;
+  --line:rgba(46,37,102,.12); --line-d:rgba(255,255,255,.18);
+  --f:"Manrope",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --ease:cubic-bezier(.22,.61,.36,1); --out:cubic-bezier(.16,1,.3,1);
+  --pad:clamp(4.5rem,8vw,7.5rem);
   --wrap:min(1240px,90%);
-  --r:20px;
+  --r:22px; --nav:78px;
 }
 *,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--paper);color:var(--body);font-family:var(--f);font-weight:400;font-size:16.5px;line-height:1.75;overflow-x:hidden;-webkit-font-smoothing:antialiased}
-img{max-width:100%;display:block}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scroll-padding-top:calc(var(--nav) + 12px)}
+body{margin:0;background:var(--paper);color:var(--body);font-family:var(--f);font-weight:400;font-size:16.5px;line-height:1.72;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block;height:auto}
 a{color:inherit;text-decoration:none}
-h1,h2,h3,h4{margin:0;font-family:var(--f);font-weight:800;color:var(--ink);line-height:1.13;letter-spacing:-.015em}
-h1{font-size:clamp(2.5rem,1.5rem + 4vw,4.6rem)}
-h2{font-size:clamp(1.95rem,1.4rem + 2.2vw,3.1rem)}
-h3{font-size:clamp(1.22rem,1.1rem + .6vw,1.55rem)}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+h1,h2,h3,h4{margin:0;font-family:var(--f);font-weight:800;color:var(--ink);line-height:1.05;letter-spacing:-.03em}
+h1{font-size:clamp(2.7rem,1.4rem + 5vw,5.6rem)}
+h2{font-size:clamp(2rem,1.3rem + 2.6vw,3.5rem)}
+h3{font-size:clamp(1.25rem,1.1rem + .6vw,1.6rem);letter-spacing:-.02em}
 p{margin:0 0 1.05em}p:last-child{margin-bottom:0}
 ::selection{background:var(--sun);color:#fff}
-:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
-.wrap{width:var(--wrap);margin-inline:auto}
-.sec{padding-block:var(--pad)}
-.eyebrow{display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:var(--sun-d);background:var(--paper-2);border-radius:100px;padding:.42rem 1rem;margin-bottom:1.15rem}
-.on-dark{background:var(--ink);color:#C6CAE6}
+:focus-visible{outline:3px solid var(--sun);outline-offset:3px;border-radius:8px}
+.wrap{width:var(--wrap);margin-inline:auto;position:relative}
+.sec{padding-block:var(--pad);position:relative}
+.eyebrow{display:inline-flex;align-items:center;gap:.6rem;font-size:.7rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:var(--sun-d);margin-bottom:1.1rem}
+.eyebrow::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--sun);transform:scale(0);transition:transform .6s var(--out) .1s}
+.rv.in .eyebrow::before,.eyebrow.in::before,.no-js .eyebrow::before{transform:scale(1)}
+.on-dark{background:var(--ink);color:#CBC8E6;position:relative;overflow:clip}
 .on-dark h1,.on-dark h2,.on-dark h3,.on-dark h4{color:#fff}
-.on-dark .eyebrow{color:#fff;background:rgba(255,255,255,.12)}
-.lead{font-size:clamp(1.04rem,1rem + .32vw,1.2rem)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;padding:.95rem 1.8rem;border-radius:100px;font-size:.86rem;font-weight:800;letter-spacing:.02em;border:2px solid transparent;cursor:pointer;transition:background .3s var(--ease),color .3s var(--ease),border-color .3s var(--ease),transform .3s var(--ease),box-shadow .3s var(--ease)}
-.btn-p{background:var(--sun);color:#fff;box-shadow:0 10px 26px rgba(238,128,51,.3)}
-.btn-p:hover{background:var(--sun-d);transform:translateY(-2px)}
-.btn-o{border-color:rgba(255,255,255,.55);color:#fff}
-.btn-o:hover{background:#fff;color:var(--ink);transform:translateY(-2px)}
-.btn-d{border-color:var(--ink);color:var(--ink)}
-.btn-d:hover{background:var(--ink);color:#fff;transform:translateY(-2px)}
+.on-dark .eyebrow{color:var(--sun-l)}
+.on-dark::before{content:"";position:absolute;right:-10%;top:-30%;width:min(760px,80%);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(242,140,40,.16),transparent 62%);pointer-events:none}
+.on-dark>*{position:relative}
+.lead{font-size:clamp(1.05rem,1rem + .34vw,1.22rem)}
+.on-dark .lead{color:#D6D3EE}
+.mark{position:relative;white-space:nowrap}
+.mark svg{position:absolute;left:-2%;right:-2%;bottom:-.12em;width:104%;height:.36em;overflow:visible;pointer-events:none}
+.mark svg path{fill:none;stroke:var(--sun);stroke-width:8;stroke-linecap:round;vector-effect:non-scaling-stroke;stroke-dasharray:400;stroke-dashoffset:400;transition:stroke-dashoffset 1s var(--out) .5s}
+.in .mark svg path,.no-js .mark svg path{stroke-dashoffset:0}
 
-/* header */
-.hdr{position:fixed;inset:0 0 auto 0;z-index:70;padding-block:1rem;transition:background .45s var(--ease),box-shadow .45s var(--ease),padding .45s var(--ease)}
+/* buttons */
+.btn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:.6rem;padding:1rem 1.8rem;border-radius:100px;font-size:.9rem;font-weight:800;letter-spacing:.01em;border:2px solid transparent;overflow:hidden;isolation:isolate;transition:color .4s var(--ease),border-color .4s var(--ease),transform .35s var(--out),box-shadow .4s var(--ease)}
+.btn svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2.2;flex:none;transition:transform .4s var(--ease)}
+.btn::after{content:"";position:absolute;inset:0;z-index:-1;border-radius:inherit;transform:translateY(101%);transition:transform .5s var(--ease)}
+.btn-p{background:var(--sun);color:#fff;box-shadow:0 14px 30px -12px rgba(242,140,40,.55)}
+.btn-p::after{background:var(--ink)}
+.btn-o{border-color:rgba(255,255,255,.55);color:#fff}
+.btn-o::after{background:#fff}.btn-o:hover{color:var(--ink);border-color:#fff}
+.btn-d{border-color:var(--ink);color:var(--ink)}.btn-d::after{background:var(--ink)}.btn-d:hover{color:#fff}
+.link{display:inline-flex;align-items:center;gap:.5rem;font-size:.92rem;font-weight:800;padding:1rem .1rem;position:relative}
+.link::after{content:"";position:absolute;left:.1rem;right:100%;bottom:.75rem;height:2px;border-radius:2px;background:currentColor;transition:right .45s var(--out)}
+.link svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2.2;transition:transform .4s var(--ease)}
+@media(hover:hover){.btn:hover::after{transform:translateY(0)}.btn:hover svg{transform:translateX(4px)}.btn-p:hover{color:#fff;transform:translateY(-2px);box-shadow:0 18px 34px -12px rgba(46,37,102,.45)}.link:hover::after{right:.1rem}.link:hover svg{transform:translateX(4px)}}
+.btn:active{transform:scale(.98)}
+.cta-row{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem 1.4rem;margin-top:2rem}
+
+.grain{position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.04;mix-blend-mode:multiply;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+/* reveal */
+.js .rv{opacity:0;transform:translateY(22px);transition:opacity .5s var(--out),transform .5s var(--out)}
+.js .rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.06s}.rv.d2{transition-delay:.12s}.rv.d3{transition-delay:.18s}.rv.d4{transition-delay:.24s}
+.js .lines .ln{display:block;overflow:hidden;padding-bottom:.22em;margin-bottom:-.22em}
+.js .lines .ln>span{display:block;transform:translateY(110%);transition:transform .9s var(--out)}
+.js .lines.in .ln>span{transform:none}
+.js .lines.in .ln:nth-child(2)>span{transition-delay:.09s}
+.js .lines.in .ln:nth-child(3)>span{transition-delay:.18s}
+.js .pop{transform:scale(.92);opacity:0;transition:transform .6s var(--out),opacity .5s var(--out)}
+.js .pop.in{transform:none;opacity:1}
+.progress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--sun),var(--rose));z-index:120;transition:width .1s linear}
+
+/* ================================ HEADER ================================ */
+.hdr{position:fixed;inset:0 0 auto 0;z-index:70;height:var(--nav);display:flex;align-items:center;transition:background .45s var(--ease),box-shadow .45s var(--ease),transform .5s var(--ease)}
+.hdr.hide{transform:translateY(-100%)}
 .hdr-in{width:var(--wrap);margin-inline:auto;display:flex;align-items:center;justify-content:space-between;gap:1.2rem}
 .brand{display:flex;align-items:center;gap:.8rem;min-width:0}
-.brand img{width:50px;height:50px;object-fit:contain;border-radius:14px;background:#fff;padding:4px}
+.brand img{width:50px;height:50px;object-fit:contain;border-radius:16px;background:#fff;padding:4px;transition:transform .6s var(--out)}
 .brand-tx{display:grid;line-height:1.15;min-width:0}
 .bn-short{display:none}
-.brand-tx b{font-weight:800;font-size:1.12rem;color:#fff;white-space:nowrap;transition:color .45s var(--ease)}
-.brand-tx span{font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.72);transition:color .45s var(--ease)}
+.brand-tx b{font-weight:800;font-size:1.12rem;color:#fff;white-space:nowrap;letter-spacing:-.02em;transition:color .45s var(--ease)}
+.brand-tx span{font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.72);transition:color .45s var(--ease);font-weight:600}
 .nav{display:flex;align-items:center;gap:1.7rem}
-.nav a{font-size:.9rem;font-weight:700;color:rgba(255,255,255,.9);position:relative;padding-block:.3rem;transition:color .35s var(--ease)}
-.nav a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;border-radius:2px;background:var(--sun);transform:scaleX(0);transform-origin:0 50%;transition:transform .35s var(--ease)}
-.nav a:hover::after{transform:scaleX(1)}
+.nav a{font-size:.88rem;font-weight:700;color:rgba(255,255,255,.9);position:relative;padding-block:.3rem;transition:color .35s var(--ease)}
+.nav a::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:2px;border-radius:2px;background:var(--sun);transition:right .4s var(--out)}
+.nav a:hover::after,.nav a.active::after{right:0}
 .hdr-right{display:flex;align-items:center;gap:.85rem}
 .lang{display:flex;align-items:center;gap:.15rem;border:2px solid rgba(255,255,255,.3);border-radius:100px;padding:2px;transition:border-color .45s var(--ease)}
-.lang button{display:flex;align-items:center;gap:.4rem;background:none;border:0;cursor:pointer;color:rgba(255,255,255,.85);font-family:var(--f);font-size:.72rem;font-weight:800;padding:.35rem .7rem;border-radius:100px;transition:background .3s var(--ease),color .3s var(--ease)}
+.lang button{display:flex;align-items:center;gap:.4rem;color:rgba(255,255,255,.85);font-size:.72rem;font-weight:800;padding:.35rem .7rem;border-radius:100px;transition:background .3s var(--ease),color .3s var(--ease)}
 .lang button[aria-pressed="true"]{background:var(--sun);color:#fff}
 .flag{display:block;width:18px;height:12px;border-radius:3px;overflow:hidden;flex:none;line-height:0;box-shadow:0 0 0 1px rgba(0,0,0,.12)}
 .flag svg{display:block;width:100%;height:100%}
-.burger{display:none;width:46px;height:46px;border:2px solid rgba(255,255,255,.3);background:none;border-radius:14px;cursor:pointer;place-items:center;transition:border-color .45s var(--ease)}
+.burger{display:none;width:46px;height:46px;border:2px solid rgba(255,255,255,.3);border-radius:16px;place-items:center;transition:border-color .45s var(--ease)}
 .burger span{display:block;width:18px;height:2px;border-radius:2px;background:#fff;margin:3px 0;transition:background .45s var(--ease)}
-.hdr.stuck{background:rgba(255,251,244,.95);backdrop-filter:saturate(180%) blur(14px);-webkit-backdrop-filter:saturate(180%) blur(14px);box-shadow:0 6px 26px rgba(35,38,71,.08);padding-block:.55rem}
+.hdr.stuck{background:rgba(255,249,241,.94);backdrop-filter:saturate(180%) blur(16px);-webkit-backdrop-filter:saturate(180%) blur(16px);box-shadow:0 6px 26px rgba(46,37,102,.08)}
 .hdr.stuck .brand-tx b{color:var(--ink)}
 .hdr.stuck .brand-tx span{color:var(--muted)}
 .hdr.stuck .nav a{color:var(--ink)}
@@ -86,151 +129,213 @@ p{margin:0 0 1.05em}p:last-child{margin-bottom:0}
 .hdr.stuck .lang button[aria-pressed="true"]{color:#fff}
 .hdr.stuck .burger{border-color:var(--line)}
 .hdr.stuck .burger span{background:var(--ink)}
+@media(hover:hover){.brand:hover img{transform:rotate(-8deg) scale(1.06)}}
 .mnav{position:fixed;inset:0;z-index:90;background:var(--ink);display:grid;grid-template-rows:auto 1fr auto;opacity:0;visibility:hidden;transition:opacity .4s var(--ease),visibility .4s}
 .mnav.open{opacity:1;visibility:visible}
-.mnav-top{display:flex;justify-content:flex-end;padding:1.1rem 5%}
-.mclose{width:50px;height:50px;border:2px solid var(--line-d);background:none;border-radius:16px;color:#fff;font-size:1.5rem;line-height:1;cursor:pointer;display:grid;place-items:center}
-.mnav nav{display:grid;align-content:center;gap:.2rem;padding:0 8%}
-.mnav nav a{font-size:clamp(1.6rem,6.5vw,2.2rem);font-weight:800;color:#fff;padding:.4rem 0;border-bottom:1px solid rgba(255,255,255,.1)}
-.mnav-foot{padding:1.6rem 8% 2.4rem;display:grid;gap:.4rem;color:var(--teal-l);font-size:.95rem}
+.mnav-top{display:flex;justify-content:flex-end;align-items:center;height:var(--nav);padding-inline:5%}
+.mclose{width:50px;height:50px;border:2px solid var(--line-d);border-radius:16px;color:#fff;font-size:1.5rem;line-height:1;display:grid;place-items:center;transition:background .3s var(--ease),transform .35s var(--ease)}
+.mclose:hover{background:rgba(255,255,255,.09);transform:rotate(90deg)}
+.mnav nav{display:grid;align-content:center;gap:.1rem;padding:0 8%;overflow-y:auto}
+.mnav nav a{font-size:clamp(1.55rem,6.4vw,2.2rem);font-weight:800;letter-spacing:-.02em;color:#fff;padding:.42rem 0;border-bottom:1px solid rgba(255,255,255,.1);display:flex;align-items:baseline;gap:.9rem;opacity:0;transform:translateY(14px)}
+.mnav nav a .n{font-size:.6rem;letter-spacing:.2em;color:var(--sun);font-weight:800}
+.mnav.open nav a{animation:mobIn .5s var(--out) forwards}
+.mnav.open nav a:nth-child(2){animation-delay:.04s}.mnav.open nav a:nth-child(3){animation-delay:.08s}.mnav.open nav a:nth-child(4){animation-delay:.12s}
+.mnav.open nav a:nth-child(5){animation-delay:.16s}.mnav.open nav a:nth-child(6){animation-delay:.2s}
+@keyframes mobIn{to{opacity:1;transform:none}}
+.mnav-foot{padding:1.6rem 8% 2.4rem;display:grid;gap:.4rem;color:var(--sun-l);font-size:.95rem}
 .mnav-foot a{color:#fff;font-weight:700}
 
-/* hero */
-.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden;background:var(--ink)}
+/* ================================ HERO ================================ */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden;background:var(--ink);isolation:isolate}
 .hero-media{position:absolute;inset:0;z-index:0}
-.hero-media img{width:100%;height:100%;object-fit:cover;object-position:50% 40%;will-change:transform;transform:scale(1.09);animation:heroIn 2.8s var(--ease) forwards}
-@keyframes heroIn{to{transform:scale(1)}}
-.hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,22,44,.72) 0%,rgba(20,22,44,.3) 32%,rgba(20,22,44,.66) 72%,rgba(20,22,44,.94) 100%)}
-.hero-in{position:relative;z-index:2;width:var(--wrap);margin-inline:auto;padding-block:9rem clamp(4.4rem,9vw,6.2rem)}
-.hero .tag{display:inline-block;font-size:.78rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:#fff;background:rgba(255,255,255,.15);border-radius:100px;padding:.45rem 1.05rem;margin-bottom:1.2rem;backdrop-filter:blur(6px)}
-.hero h1{color:#fff;max-width:17ch;text-wrap:balance;text-shadow:0 2px 40px rgba(0,0,0,.35)}
-.hero .lead{margin-top:1.4rem;max-width:58ch;color:rgba(238,240,250,.93)}
-.hero-cta{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:2.2rem}
-.scroll-cue{position:absolute;left:50%;bottom:1.5rem;transform:translateX(-50%);z-index:3;width:2px;border-radius:2px;height:52px;background:linear-gradient(180deg,transparent,rgba(255,255,255,.5));overflow:hidden}
-.scroll-cue::after{content:"";position:absolute;inset:0;background:#fff;animation:cue 2.4s var(--ease) infinite}
+.hero-media img{width:100%;height:100%;object-fit:cover;object-position:50% 42%;transform:scale(1.07);transform-origin:50% 60%;animation:kb 22s var(--ease) forwards}
+@keyframes kb{to{transform:scale(1)}}
+.hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(30,22,74,.6) 0%,rgba(30,22,74,.22) 34%,rgba(30,22,74,.7) 70%,rgba(30,22,74,.96) 100%)}
+.hero-in{position:relative;z-index:2;width:var(--wrap);margin-inline:auto;padding-block:9rem clamp(8rem,13vw,10.5rem)}
+.hero .tag{display:inline-flex;align-items:center;gap:.6rem;font-size:.74rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#fff;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);border-radius:100px;padding:.5rem 1.05rem;margin-bottom:1.3rem;backdrop-filter:blur(8px)}
+.hero .tag i{width:8px;height:8px;border-radius:50%;background:var(--sun);display:inline-block}
+.hero h1{color:#fff;max-width:14ch;text-wrap:balance}
+.hero .lead{margin-top:1.5rem;max-width:56ch;color:rgba(240,238,250,.94)}
+.hero .link{color:#fff}
+.scroll-cue{position:absolute;left:50%;bottom:1.4rem;transform:translateX(-50%);z-index:3;width:2px;border-radius:2px;height:56px;background:linear-gradient(180deg,transparent,rgba(255,255,255,.5));overflow:hidden}
+.scroll-cue::after{content:"";position:absolute;inset:0;background:#fff;transform:translateY(-100%);animation:cue 2.6s var(--ease) 1.2s 3}
 @keyframes cue{0%{transform:translateY(-100%)}60%,100%{transform:translateY(100%)}}
 
-/* pillars */
-.pil{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(1rem,2.4vw,1.8rem);margin-top:-4.5rem;position:relative;z-index:5}
-.pil article{background:var(--card);border-radius:var(--r);padding:clamp(1.6rem,3vw,2.2rem);box-shadow:0 18px 46px rgba(35,38,71,.09);display:grid;gap:.6rem;align-content:start}
-.pil .dot{width:44px;height:44px;border-radius:14px;display:grid;place-items:center;font-weight:800;color:#fff;font-size:1.05rem;margin-bottom:.4rem}
+/* ================================ PILLARS ================================ */
+.pil{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(1rem,2.4vw,1.8rem);margin-top:-5.5rem;position:relative;z-index:5}
+.pil article{background:var(--card);border-radius:var(--r);padding:clamp(1.7rem,3vw,2.3rem);box-shadow:0 30px 60px -30px rgba(46,37,102,.35);display:grid;gap:.6rem;align-content:start;transition:transform .5s var(--out),box-shadow .5s var(--ease)}
+.pil .dot{width:48px;height:48px;border-radius:16px;display:grid;place-items:center;font-weight:800;color:#fff;font-size:1.1rem;margin-bottom:.5rem}
 .pil article:nth-child(1) .dot{background:var(--sun)}
-.pil article:nth-child(2) .dot{background:var(--teal)}
+.pil article:nth-child(2) .dot{background:var(--ink-3)}
 .pil article:nth-child(3) .dot{background:var(--rose)}
 .pil p{font-size:.96rem;margin:0}
+@media(hover:hover){.pil article:hover{transform:translateY(-5px);box-shadow:0 40px 70px -30px rgba(46,37,102,.45)}}
 
-/* about */
-.abt{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(2.2rem,5vw,4.6rem);align-items:center}
-.abt figure{margin:0;border-radius:var(--r);overflow:hidden}
-.abt figure img{width:100%;height:auto;aspect-ratio:5/4;object-fit:cover}
-.vision{background:var(--paper-2);border-radius:var(--r);padding:clamp(1.4rem,3vw,2rem);margin-top:1.6rem;font-weight:600;color:var(--ink);font-size:1.05rem;line-height:1.6}
+/* ================================ ABOUT ================================ */
+.abt{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(2.2rem,5vw,4.8rem);align-items:center}
+.abt figure{margin:0;position:relative}
+.abt figure .ph{display:block;border-radius:var(--r);overflow:hidden}
+.abt figure img{width:100%;height:auto}
+.abt figure::before{content:"";position:absolute;left:-26px;top:-26px;width:120px;height:120px;border-radius:50%;background:var(--sun-l);z-index:-1}
+.abt figure::after{content:"";position:absolute;right:-18px;bottom:-18px;width:80px;height:80px;border-radius:24px;background:var(--paper-2);z-index:-1;transform:rotate(12deg)}
+.abt figcaption{margin-top:.8rem;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:700}
+.vision{background:var(--ink);color:#fff;border-radius:var(--r);padding:clamp(1.4rem,3vw,2rem);margin-top:1.8rem;font-weight:700;font-size:1.08rem;line-height:1.55;position:relative;overflow:hidden}
+.vision::before{content:"";position:absolute;right:-30px;top:-30px;width:120px;height:120px;border-radius:50%;background:rgba(242,140,40,.25)}
+.vision span{position:relative}
 
-/* services */
-.srv{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(1rem,2vw,1.5rem);margin-top:3rem}
-.srv article{background:var(--card);border-radius:var(--r);overflow:hidden;display:grid;grid-template-rows:auto 1fr;box-shadow:0 10px 30px rgba(35,38,71,.07);transition:transform .4s var(--ease),box-shadow .4s var(--ease)}
-.srv article:hover{transform:translateY(-5px);box-shadow:0 20px 46px rgba(35,38,71,.13)}
-.srv img{width:100%;aspect-ratio:4/3;object-fit:cover}
-.srv .tx{padding:1.3rem 1.35rem 1.6rem;display:grid;gap:.55rem;align-content:start}
-.srv h3{font-size:1.16rem}
-.srv p{font-size:.93rem;margin:0}
+/* ================================ SERVICES · room explorer (signature) ================================ */
+.exp{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(2rem,4vw,3.6rem);align-items:start;margin-top:3rem}
+.exp-list{display:grid;gap:.4rem}
+.exp-btn{width:100%;display:grid;grid-template-columns:2.6rem minmax(0,1fr) auto;align-items:center;gap:.9rem;padding:1rem 1.15rem;border-radius:18px;text-align:left;background:transparent;transition:background .35s var(--ease),transform .35s var(--out)}
+.exp-btn .no{font-size:.76rem;font-weight:800;color:var(--sun-d);letter-spacing:.06em}
+.exp-btn h3{font-size:clamp(1.1rem,1rem + .5vw,1.4rem);transition:color .3s}
+.exp-btn .arr{width:34px;height:34px;border-radius:50%;border:2px solid var(--line);display:grid;place-items:center;transition:background .35s var(--ease),border-color .35s var(--ease),transform .4s var(--out)}
+.exp-btn .arr svg{width:14px;height:14px;stroke:var(--ink);fill:none;stroke-width:2.4;transition:stroke .3s}
+.exp-btn[aria-selected="true"]{background:var(--card);box-shadow:0 20px 40px -24px rgba(46,37,102,.35)}
+.exp-btn[aria-selected="true"] .arr{background:var(--sun);border-color:var(--sun);transform:translateX(3px)}
+.exp-btn[aria-selected="true"] .arr svg{stroke:#fff}
+@media(hover:hover){.exp-btn:hover{background:var(--card)}.exp-btn:hover .arr{border-color:var(--sun)}}
+.exp-stage{position:sticky;top:calc(var(--nav) + 24px);display:grid;gap:1.1rem}
+.stage{position:relative;height:clamp(380px,44vw,560px);border-radius:var(--r);background:var(--paper-2);overflow:hidden}
+.stage::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 30% 20%,rgba(242,140,40,.18),transparent 55%),radial-gradient(circle at 80% 90%,rgba(228,80,122,.12),transparent 50%)}
+/* every room photograph is shown whole, never cropped */
+.stage img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:clamp(.8rem,2vw,1.4rem);opacity:0;transform:scale(1.03);transition:opacity .55s var(--ease),transform .9s var(--out)}
+.stage img.on{opacity:1;transform:none}
+.stage .cap{position:absolute;left:1.1rem;bottom:1rem;font-size:.7rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);background:rgba(255,255,255,.85);padding:.45rem .8rem;border-radius:100px;backdrop-filter:blur(6px)}
+.stage-tx{background:var(--card);border-radius:var(--r);padding:clamp(1.3rem,2.4vw,1.8rem);box-shadow:0 20px 40px -28px rgba(46,37,102,.3);display:grid;gap:.5rem}
+.stage-tx .k{font-size:.7rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--sun-d)}
+.stage-tx p{font-size:.97rem;margin:0}
+.exp-cards{display:none;gap:1rem;margin-top:2.4rem}
+.exp-card{background:var(--card);border-radius:var(--r);overflow:hidden;box-shadow:0 20px 40px -28px rgba(46,37,102,.3)}
+.exp-card .ph{background:var(--paper-2);display:grid;place-items:center;padding:.8rem}
+.exp-card img{max-height:360px;width:auto;max-width:100%;border-radius:12px}
+.exp-card .tx{padding:1.2rem 1.3rem 1.5rem;display:grid;gap:.5rem}
+.exp-card .no{font-size:.72rem;font-weight:800;letter-spacing:.14em;color:var(--sun-d)}
+.exp-card p{font-size:.95rem;margin:0}
 
-/* steps */
-.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--line-d);border-radius:var(--r);overflow:hidden;margin-top:3rem}
-.steps article{background:var(--ink);padding:clamp(1.6rem,3vw,2.3rem);display:grid;gap:.6rem;align-content:start}
-.steps b{font-size:2.2rem;font-weight:800;color:var(--teal-l);line-height:1}
-.steps p{font-size:.95rem;color:#C6CAE6;margin:0}
+/* ================================ STEPS ================================ */
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--line-d);border:1px solid var(--line-d);border-radius:var(--r);overflow:hidden;margin-top:3rem}
+.steps article{background:var(--ink);padding:clamp(1.7rem,3vw,2.4rem);display:grid;gap:.6rem;align-content:start;transition:background .4s var(--ease);position:relative}
+.steps b{font-size:clamp(2.6rem,2rem + 2vw,4rem);font-weight:800;color:var(--sun);line-height:1;letter-spacing:-.04em}
+.steps h3{color:#fff}
+.steps p{font-size:.95rem;color:#CBC8E6;margin:0}
+.steps article::after{content:"";position:absolute;left:0;bottom:0;height:3px;width:100%;background:var(--sun);transform:scaleX(0);transform-origin:0 50%;transition:transform .9s var(--out) .1s}
+.steps article.in::after,.no-js .steps article::after{transform:scaleX(1)}
+@media(hover:hover){.steps article:hover{background:var(--ink-2)}}
 
-/* chips */
-.chips{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:2.2rem}
-.chip{background:var(--card);border:2px solid var(--line);border-radius:100px;padding:.6rem 1.15rem;font-size:.92rem;font-weight:600;color:var(--ink);transition:border-color .3s var(--ease),transform .3s var(--ease)}
-.chip:hover{border-color:var(--teal);transform:translateY(-2px)}
+/* ================================ WHO ================================ */
+.who{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(2rem,5vw,4.5rem);align-items:start}
+.chips{display:flex;flex-wrap:wrap;gap:.65rem}
+.chip{display:inline-flex;align-items:center;gap:.6rem;background:var(--card);border:2px solid var(--line);border-radius:100px;padding:.7rem 1.2rem;font-size:.95rem;font-weight:700;color:var(--ink);transition:border-color .3s var(--ease),transform .3s var(--out),box-shadow .4s var(--ease)}
+.chip::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--sun);flex:none}
+.chip:nth-child(3n+2)::before{background:var(--mint)}
+.chip:nth-child(3n+3)::before{background:var(--rose)}
+@media(hover:hover){.chip:hover{border-color:var(--sun);transform:translateY(-3px);box-shadow:0 14px 26px -16px rgba(46,37,102,.35)}}
 
-/* team */
+/* ================================ TEAM ================================ */
 .team{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(1rem,2vw,1.5rem);margin-top:3rem}
-.team article{background:var(--card);border-radius:var(--r);padding:clamp(1.5rem,2.6vw,2rem);display:grid;gap:.5rem;align-content:start;box-shadow:0 10px 30px rgba(35,38,71,.06)}
-.team .mono{width:52px;height:52px;border-radius:16px;background:var(--paper-2);color:var(--sun-d);display:grid;place-items:center;font-weight:800;font-size:1.15rem;margin-bottom:.4rem}
-.team p{font-size:.94rem;margin:0}
+.team article{background:var(--card);border-radius:var(--r);padding:clamp(1.6rem,2.6vw,2.1rem);display:grid;gap:.5rem;align-content:start;box-shadow:0 20px 40px -30px rgba(46,37,102,.3);transition:transform .5s var(--out),box-shadow .5s var(--ease)}
+.team .mono{width:56px;height:56px;border-radius:18px;background:var(--paper-2);color:var(--sun-d);display:grid;place-items:center;font-weight:800;font-size:1.2rem;margin-bottom:.5rem}
+.team article:nth-child(2) .mono,.team article:nth-child(5) .mono{background:#E4F3F1;color:var(--mint)}
+.team article:nth-child(3) .mono,.team article:nth-child(6) .mono{background:#FCE6EC;color:var(--rose)}
+.team p{font-size:.95rem;margin:0}
+@media(hover:hover){.team article:hover{transform:translateY(-5px);box-shadow:0 34px 60px -30px rgba(46,37,102,.4)}}
 
-/* contact */
+/* ================================ CONTACT ================================ */
 .ct{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(2.2rem,5vw,4.4rem);align-items:start}
+form.cf{background:var(--card);border-radius:var(--r);padding:clamp(1.5rem,3.2vw,2.5rem);box-shadow:0 40px 80px -50px rgba(46,37,102,.4)}
 .field{display:grid;gap:.4rem;margin-bottom:1rem}
-.field label{font-size:.78rem;font-weight:800;color:var(--ink)}
-.field input,.field textarea{font-family:var(--f);font-size:1rem;color:var(--ink);background:var(--card);border:2px solid var(--line);border-radius:14px;padding:.85rem 1rem;width:100%;transition:border-color .3s var(--ease)}
+.field label{font-size:.8rem;font-weight:800;color:var(--ink)}
+.field input,.field textarea{font-family:var(--f);font-size:1rem;color:var(--ink);background:var(--paper);border:2px solid var(--line);border-radius:14px;padding:.85rem 1rem;width:100%;transition:border-color .3s var(--ease),background .3s,box-shadow .3s}
 .field textarea{min-height:140px;resize:vertical}
-.field input:focus,.field textarea:focus{border-color:var(--sun);outline:none}
+.field input:focus,.field textarea:focus{border-color:var(--sun);outline:none;background:#fff;box-shadow:0 0 0 4px rgba(242,140,40,.15)}
 .hp{position:absolute;left:-9999px}
-.ct-list{display:grid;gap:.9rem;margin-top:2rem}
-.ct-list .row{background:var(--card);border-radius:16px;padding:1rem 1.2rem;display:grid;grid-template-columns:110px minmax(0,1fr);gap:1rem;font-size:1rem;box-shadow:0 8px 22px rgba(35,38,71,.05)}
-.ct-list .row b{font-size:.75rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);padding-top:.3em}
+.ct-list{display:grid;gap:.8rem;margin-top:2rem}
+.ct-list .row{background:var(--card);border-radius:16px;padding:1rem 1.2rem;display:grid;grid-template-columns:110px minmax(0,1fr);gap:1rem;font-size:1rem;box-shadow:0 12px 26px -20px rgba(46,37,102,.3)}
+.ct-list .row b{font-size:.72rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);padding-top:.3em}
+.ct-list a{font-weight:700;transition:color .3s}
 .ct-list a:hover{color:var(--sun-d)}
-.note{margin-top:1rem;font-size:.88rem;color:var(--muted)}
+.note{margin-top:1rem;font-size:.86rem;color:var(--muted)}
 
-/* footer */
-.ft{background:var(--ink);color:#A8AEDA;padding-block:clamp(3rem,5vw,4.4rem) 0}
-.ft-top{display:grid;grid-template-columns:minmax(0,1.4fr) repeat(3,minmax(0,1fr));gap:clamp(1.8rem,4vw,3rem);padding-bottom:2.8rem;border-bottom:1px solid var(--line-d)}
-.ft h4{font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;color:#fff;font-weight:800;margin-bottom:1.1rem}
+/* ================================ FOOTER ================================ */
+.ft{background:var(--ink);color:#B4B1D6;padding-block:clamp(3rem,5vw,4.4rem) 0;position:relative;overflow:hidden}
+.ft::before{content:"";position:absolute;right:-10%;bottom:-40%;width:min(700px,80%);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(242,140,40,.12),transparent 64%);pointer-events:none}
+.ft-top{display:grid;grid-template-columns:minmax(0,1.4fr) repeat(3,minmax(0,1fr));gap:clamp(1.8rem,4vw,3rem);padding-bottom:2.8rem;border-bottom:1px solid var(--line-d);position:relative}
+.ft h4{font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:#fff;font-weight:800;margin-bottom:1.1rem}
 .ft ul{list-style:none;margin:0;padding:0;display:grid;gap:.55rem;font-size:.95rem}
+.ft a{transition:color .3s,padding-left .35s var(--ease)}
 .ft a:hover{color:#fff}
+.ft ul a:hover{padding-left:.25rem}
 .ft-brand{display:flex;align-items:center;gap:.8rem;margin-bottom:1.1rem}
-.ft-brand img{width:52px;height:52px;object-fit:contain;border-radius:14px;background:#fff;padding:4px}
-.ft-brand b{font-size:1.2rem;color:#fff;font-weight:800}
-.ft-bot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem;padding-block:1.5rem;font-size:.85rem}
+.ft-brand img{width:52px;height:52px;object-fit:contain;border-radius:16px;background:#fff;padding:4px}
+.ft-brand b{font-size:1.25rem;color:#fff;font-weight:800;letter-spacing:-.02em}
+.ft-bot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem;padding-block:1.5rem;font-size:.85rem;position:relative}
 .ft-bot a{color:#fff}
 
-/* lightbox */
-.lb{position:fixed;inset:0;z-index:120;background:rgba(16,18,36,.96);display:grid;place-items:center;padding:clamp(1rem,4vw,3rem);opacity:0;visibility:hidden;transition:opacity .35s var(--ease),visibility .35s}
+/* ================================ MOBILE BAR ================================ */
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:none;grid-template-columns:repeat(3,1fr);background:rgba(46,37,102,.95);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-top:1px solid rgba(255,255,255,.12);padding-bottom:env(safe-area-inset-bottom);transform:translateY(100%);transition:transform .45s var(--out)}
+.mbar.on{transform:none}
+.mbar a{display:grid;justify-items:center;gap:.25rem;padding:.7rem .4rem .75rem;color:#fff;font-size:.68rem;letter-spacing:.06em;text-transform:uppercase;font-weight:800}
+.mbar a+a{border-left:1px solid rgba(255,255,255,.12)}
+.mbar svg{width:18px;height:18px;stroke:var(--sun);fill:none;stroke-width:2}
+
+/* ================================ LIGHTBOX ================================ */
+.lb{position:fixed;inset:0;z-index:120;background:rgba(22,16,52,.96);display:grid;place-items:center;padding:clamp(1rem,4vw,3rem);opacity:0;visibility:hidden;transition:opacity .35s var(--ease),visibility .35s}
 .lb.open{opacity:1;visibility:visible}
-.lb img{max-width:100%;max-height:86vh;object-fit:contain;border-radius:16px}
-.lb-x{position:absolute;top:1rem;right:1rem;width:50px;height:50px;border:2px solid var(--line-d);background:none;color:#fff;font-size:1.5rem;line-height:1;cursor:pointer;border-radius:16px}
-.lb-cap{position:absolute;left:0;right:0;bottom:1.1rem;text-align:center;color:#B9BEE4;font-size:.9rem;padding-inline:1rem}
+.lb img{max-width:100%;max-height:86vh;width:auto;object-fit:contain;border-radius:16px;transform:scale(.96);transition:transform .5s var(--out)}
+.lb.open img{transform:none}
+.lb-x{position:absolute;top:1rem;right:1rem;width:50px;height:50px;border:2px solid var(--line-d);color:#fff;font-size:1.5rem;line-height:1;border-radius:16px;transition:background .3s,transform .35s}
+.lb-x:hover{background:rgba(255,255,255,.1);transform:rotate(90deg)}
+.lb-cap{position:absolute;left:0;right:0;bottom:1.1rem;text-align:center;color:#C6C3E4;font-size:.9rem;padding-inline:1rem}
 
-.rv{opacity:0;transform:translateY(26px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
-.rv.in{opacity:1;transform:none}
-.rv.d1{transition-delay:.08s}.rv.d2{transition-delay:.16s}.rv.d3{transition-delay:.24s}.rv.d4{transition-delay:.32s}
-
+/* ================================ RESPONSIVE ================================ */
 @media(max-width:1080px){
   .nav{display:none}.burger{display:grid}
-  .srv{grid-template-columns:repeat(2,minmax(0,1fr))}
   .steps{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .abt,.ct{grid-template-columns:1fr}
-  .team{grid-template-columns:repeat(1,minmax(0,1fr))}
+  .abt,.ct,.who{grid-template-columns:1fr}
+  .team{grid-template-columns:repeat(2,minmax(0,1fr))}
   .ft-top{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .pil{grid-template-columns:1fr;margin-top:-3rem}
+  .pil{grid-template-columns:1fr;margin-top:-4rem}
+  .exp{display:none}
+  .exp-cards{display:grid}
+  .hero-in{padding-bottom:7rem}
 }
 @media(max-width:720px){
-  .srv{grid-template-columns:1fr}
   .steps{grid-template-columns:1fr}
-  .hero-in{padding-block:7.5rem 4rem}
-  .hero-cta .btn{width:100%}
+  .team{grid-template-columns:1fr}
+  .hero-in{padding-block:7.5rem 6rem}
+  .cta-row .btn{width:100%}
   .ft-top{grid-template-columns:1fr}
   .ct-list .row{grid-template-columns:1fr;gap:.2rem}
+  .mbar{display:grid}
+  body{padding-bottom:64px}
+  .scroll-cue{display:none}
+  .abt figure::before{left:-10px;top:-10px;width:70px;height:70px}
+  .abt figure::after{right:4px;bottom:-12px;width:64px;height:64px}
 }
-/* mobile header: keep the lockup, the toggle and the burger from colliding */
-@media(max-width:900px){
-  .brand-tx span{display:none}
-}
-@media(max-width:640px){
-  .bn-long{display:none}
-  .bn-short{display:block}
-}
+@media(max-width:900px){.brand-tx span{display:none}}
+@media(max-width:640px){.bn-long{display:none}.bn-short{display:block}}
 @media(max-width:520px){
   .lang button{font-size:0;gap:0;padding:.4rem .5rem}
   .lang button .flag{width:22px;height:15px}
   .brand img{width:40px;height:40px}
   .brand{gap:.55rem}
   .hdr-in{gap:.6rem}
-  .brand-tx b{font-size:.86rem}
+  .brand-tx b{font-size:.92rem}
 }
 @media(prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
-  .rv{opacity:1;transform:none;transition:none}
+  *,*::before,*::after{animation-duration:.001ms !important;animation-iteration-count:1 !important;transition-duration:.001ms !important}
+  .js .rv,.js .lines .ln>span,.js .pop{opacity:1;transform:none}
   .hero-media img{animation:none;transform:none}
-  .scroll-cue::after{animation:none}
-  .srv article:hover{transform:none}
+  .mark svg path{stroke-dashoffset:0}
 }
+@media print{.hdr,.mnav,.mbar,.lb,.progress,.grain,.scroll-cue,form.cf{display:none !important}}
 </style>
 </head>
 <body id="top">
+<div class="progress" id="progress" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
 
 <header class="hdr" id="hdr">
   <div class="hdr-in">
@@ -259,7 +364,7 @@ p{margin:0 0 1.05em}p:last-child{margin-bottom:0}
           <span class="flag" aria-hidden="true"><svg viewBox="0 0 60 30" preserveAspectRatio="xMidYMid slice"><clipPath id="ukc"><path d="M0 0h60v30H0z"/></clipPath><g clip-path="url(#ukc)"><path d="M0 0v30h60V0z" fill="#012169"/><path d="M0 0l60 30m0-30L0 30" stroke="#fff" stroke-width="6"/><path d="M0 0l60 30m0-30L0 30" stroke="#C8102E" stroke-width="4"/><path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/><path d="M30 0v30M0 15h60" stroke="#C8102E" stroke-width="6"/></g></svg></span>EN
         </button>
       </div>
-      <button class="burger" id="burger" aria-label="Μενού" aria-expanded="false"><span></span><span></span><span></span></button>
+      <button class="burger" id="burger" aria-label="Μενού" aria-expanded="false" aria-controls="mnav"><span></span><span></span><span></span></button>
     </div>
   </div>
 </header>
@@ -267,12 +372,12 @@ p{margin:0 0 1.05em}p:last-child{margin-bottom:0}
 <div class="mnav" id="mnav" role="dialog" aria-modal="true" aria-label="Μενού">
   <div class="mnav-top"><button class="mclose" id="mclose" aria-label="Κλείσιμο">&#10005;</button></div>
   <nav>
-    <a href="#kentro" data-i18n="navAbout">Το Κέντρο</a>
-    <a href="#ypiresies" data-i18n="navServices">Υπηρεσίες</a>
-    <a href="#poreia" data-i18n="navHow">Πώς δουλεύουμε</a>
-    <a href="#se-poious" data-i18n="navWho">Σε ποιους</a>
-    <a href="#omada" data-i18n="navTeam">Η ομάδα</a>
-    <a href="#epikoinonia" data-i18n="navContact">Επικοινωνία</a>
+    <a href="#kentro"><span class="n">01</span><span data-i18n="navAbout">Το Κέντρο</span></a>
+    <a href="#ypiresies"><span class="n">02</span><span data-i18n="navServices">Υπηρεσίες</span></a>
+    <a href="#poreia"><span class="n">03</span><span data-i18n="navHow">Πώς δουλεύουμε</span></a>
+    <a href="#se-poious"><span class="n">04</span><span data-i18n="navWho">Σε ποιους</span></a>
+    <a href="#omada"><span class="n">05</span><span data-i18n="navTeam">Η ομάδα</span></a>
+    <a href="#epikoinonia"><span class="n">06</span><span data-i18n="navContact">Επικοινωνία</span></a>
   </nav>
   <div class="mnav-foot">
     <a href="tel:+302104408008">210 440 8008</a>
@@ -281,17 +386,21 @@ p{margin:0 0 1.05em}p:last-child{margin-bottom:0}
   </div>
 </div>
 
+<main>
 <section class="hero" aria-labelledby="h1">
   <div class="hero-media" aria-hidden="true">
-    <img src="assets/hero.jpg" width="2000" height="1333" fetchpriority="high" decoding="async" alt="">
+    <picture>
+      <source media="(max-width:760px)" srcset="assets/hero-narrow.webp">
+      <img src="assets/hero.webp" width="1900" height="1425" fetchpriority="high" decoding="async" alt="">
+    </picture>
   </div>
   <div class="hero-in">
-    <span class="tag rv in" data-i18n="heroTag">Πρόληψη · Αξιολόγηση · Αποκατάσταση</span>
-    <h1 id="h1" class="rv in d1" data-i18n="heroTitle">Κάθε παιδί μαθαίνει με τον δικό του τρόπο.</h1>
+    <span class="tag rv in"><i aria-hidden="true"></i><span data-i18n="heroTag">Πρόληψη · Αξιολόγηση · Αποκατάσταση</span></span>
+    <h1 id="h1" class="lines in" data-i18n="heroTitle"><span class="ln"><span>Κάθε παιδί μαθαίνει</span></span><span class="ln"><span>με τον <span class="mark">δικό του<svg viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true"><path d="M2 7 C 25 2, 50 9, 98 4"/></svg></span></span></span><span class="ln"><span>τρόπο.</span></span></h1>
     <p class="lead rv in d2" data-i18n="heroLead">Το «Λόγος &amp; Αριθμός» είναι ένα σύγχρονο ψυχοπαιδαγωγικό κέντρο στη Βούλα. Μια διεπιστημονική ομάδα δίπλα σε παιδιά, εφήβους και τις οικογένειές τους — με εξατομικευμένα προγράμματα και τεκμηριωμένες μεθόδους.</p>
-    <div class="hero-cta rv in d3">
-      <a class="btn btn-p" href="#epikoinonia" data-i18n="ctaBook">Κλείστε αξιολόγηση</a>
-      <a class="btn btn-o" href="#ypiresies" data-i18n="ctaServices">Δείτε τις υπηρεσίες</a>
+    <div class="cta-row rv in d3">
+      <a class="btn btn-p" href="#epikoinonia"><span data-i18n="ctaBook">Κλείστε αξιολόγηση</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a class="link" href="#ypiresies"><span data-i18n="ctaServices">Δείτε τις υπηρεσίες</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
     </div>
   </div>
   <div class="scroll-cue" aria-hidden="true"></div>
@@ -299,23 +408,24 @@ p{margin:0 0 1.05em}p:last-child{margin-bottom:0}
 
 <section class="wrap" aria-label="Οι τρεις πυλώνες">
   <div class="pil">
-    <article class="rv"><span class="dot" aria-hidden="true">1</span><h3 data-i18n="pil1t">Διεπιστημονική ομάδα</h3><p data-i18n="pil1d">Παιδοψυχίατρος, λογοθεραπευτής, εργοθεραπευτής, ψυχολόγος, ειδικός παιδαγωγός και κοινωνικός λειτουργός, στον ίδιο χώρο και στο ίδιο πλάνο.</p></article>
-    <article class="rv d1"><span class="dot" aria-hidden="true">2</span><h3 data-i18n="pil2t">Εξατομικευμένο πρόγραμμα</h3><p data-i18n="pil2d">Κάθε πρόγραμμα προσαρμόζεται στις ικανότητες, στον τρόπο μάθησης και στις θεραπευτικές ανάγκες του συγκεκριμένου παιδιού.</p></article>
-    <article class="rv d2"><span class="dot" aria-hidden="true">3</span><h3 data-i18n="pil3t">Η οικογένεια μέσα</h3><p data-i18n="pil3d">Ενημέρωση και καθοδήγηση των γονέων σε όλη τη διάρκεια — γιατί η πρόοδος συνεχίζεται και στο σπίτι.</p></article>
+    <article class="pop rv"><span class="dot" aria-hidden="true">1</span><h3 data-i18n="pil1t">Διεπιστημονική ομάδα</h3><p data-i18n="pil1d">Παιδοψυχίατρος, λογοθεραπευτής, εργοθεραπευτής, ψυχολόγος, ειδικός παιδαγωγός και κοινωνικός λειτουργός, στον ίδιο χώρο και στο ίδιο πλάνο.</p></article>
+    <article class="pop rv d1"><span class="dot" aria-hidden="true">2</span><h3 data-i18n="pil2t">Εξατομικευμένο πρόγραμμα</h3><p data-i18n="pil2d">Κάθε πρόγραμμα προσαρμόζεται στις ικανότητες, στον τρόπο μάθησης και στις θεραπευτικές ανάγκες του συγκεκριμένου παιδιού.</p></article>
+    <article class="pop rv d2"><span class="dot" aria-hidden="true">3</span><h3 data-i18n="pil3t">Η οικογένεια μέσα</h3><p data-i18n="pil3d">Ενημέρωση και καθοδήγηση των γονέων σε όλη τη διάρκεια — γιατί η πρόοδος συνεχίζεται και στο σπίτι.</p></article>
   </div>
 </section>
 
 <section class="sec" id="kentro">
   <div class="wrap abt">
     <figure class="rv">
-      <img src="assets/about.jpg" width="1600" height="1280" loading="lazy" alt="Ο χώρος υποδοχής του κέντρου Λόγος & Αριθμός στη Βούλα" data-lb data-cap="Το κέντρο «Λόγος &amp; Αριθμός» στη Βούλα">
+      <span class="ph"><img src="assets/about.jpg" width="1400" height="1050" loading="lazy" decoding="async" alt="Ο χώρος υποδοχής του κέντρου Λόγος & Αριθμός στη Βούλα" data-lb data-cap="Το κέντρο «Λόγος &amp; Αριθμός» στη Βούλα"></span>
+      <figcaption data-i18n="abCap">Ο χώρος υποδοχής · Καλύμνου 1, Βούλα</figcaption>
     </figure>
-    <div class="rv d1">
-      <span class="eyebrow" data-i18n="abEyebrow">Το Κέντρο μας</span>
-      <h2 data-i18n="abTitle">Ένας χώρος φτιαγμένος για να νιώθει κανείς ασφάλεια.</h2>
-      <p class="lead" style="margin-top:1.3rem" data-i18n="abP1">Το «Λόγος &amp; Αριθμός» είναι ένα εξειδικευμένο θεραπευτικό κέντρο για παιδιά και εφήβους στη Βούλα. Λειτουργεί ως σύγχρονος χώρος πρόληψης, αξιολόγησης και αποκατάστασης, με ολιστική υποστήριξη που φτάνει και στην οικογένεια.</p>
-      <p data-i18n="abP2">Η θεραπευτική δουλειά ακολουθεί εξατομικευμένη, τεκμηριωμένη μεθοδολογία. Πριν ξεκινήσει οτιδήποτε, προηγείται αξιολόγηση· και όσο το πρόγραμμα τρέχει, επανεξετάζεται με βάση την πραγματική πρόοδο, όχι το ημερολόγιο.</p>
-      <div class="vision" data-i18n="abVision">Το ζητούμενο είναι ένα υποστηρικτικό περιβάλλον που προάγει την εξέλιξη, την αυτονομία και την ποιότητα ζωής.</div>
+    <div>
+      <span class="eyebrow rv" data-i18n="abEyebrow">Το Κέντρο μας</span>
+      <h2 class="rv" data-i18n="abTitle">Ένας χώρος φτιαγμένος για να νιώθει κανείς ασφάλεια.</h2>
+      <p class="lead rv d1" style="margin-top:1.4rem" data-i18n="abP1">Το «Λόγος &amp; Αριθμός» είναι ένα εξειδικευμένο θεραπευτικό κέντρο για παιδιά και εφήβους στη Βούλα. Λειτουργεί ως σύγχρονος χώρος πρόληψης, αξιολόγησης και αποκατάστασης, με ολιστική υποστήριξη που φτάνει και στην οικογένεια.</p>
+      <p class="rv d2" data-i18n="abP2">Η θεραπευτική δουλειά ακολουθεί εξατομικευμένη, τεκμηριωμένη μεθοδολογία. Πριν ξεκινήσει οτιδήποτε, προηγείται αξιολόγηση· και όσο το πρόγραμμα τρέχει, επανεξετάζεται με βάση την πραγματική πρόοδο, όχι το ημερολόγιο.</p>
+      <div class="vision rv d2"><span data-i18n="abVision">Το ζητούμενο είναι ένα υποστηρικτικό περιβάλλον που προάγει την εξέλιξη, την αυτονομία και την ποιότητα ζωής.</span></div>
     </div>
   </div>
 </section>
@@ -327,15 +437,60 @@ p{margin:0 0 1.05em}p:last-child{margin-bottom:0}
       <h2 class="rv d1" data-i18n="srvTitle">Οκτώ υπηρεσίες, ένα πλάνο ανά παιδί.</h2>
       <p class="lead rv d2" style="margin-top:1.3rem" data-i18n="srvLead">Οι υπηρεσίες συνδυάζονται μεταξύ τους: σπάνια χρειάζεται μόνο μία, και ποτέ δεν δουλεύουν απομονωμένα η μία από την άλλη.</p>
     </div>
-    <div class="srv">
-      <article class="rv"><img src="assets/s-logo.jpg" loading="lazy" alt="Ο χώρος λογοθεραπείας του κέντρου" data-lb data-cap="Λογοθεραπεία"><div class="tx"><h3 data-i18n="s1t">Λογοθεραπεία</h3><p data-i18n="s1d">Αξιολόγηση και αντιμετώπιση των διαταραχών λόγου, ομιλίας και επικοινωνίας, με εξατομικευμένο πρόγραμμα λογοθεραπευτικής αγωγής και στενή συνεργασία με γονείς και εκπαιδευτικούς. Ατομικές συνεδρίες.</p></div></article>
-      <article class="rv d1"><img src="assets/s-ergo.jpg" loading="lazy" alt="Ο χώρος εργοθεραπείας με τον τοίχο αναρρίχησης" data-lb data-cap="Εργοθεραπεία"><div class="tx"><h3 data-i18n="s2t">Εργοθεραπεία</h3><p data-i18n="s2d">Μέσα από το παιχνίδι, ο εργοθεραπευτής αξιολογεί και ενισχύει λεπτή και αδρή κινητικότητα, γνωστικές ικανότητες και οργάνωση, με στόχο τη βέλτιστη λειτουργικότητα και ανεξαρτησία στην καθημερινότητα.</p></div></article>
-      <article class="rv d2"><img src="assets/s-eidiki.jpg" loading="lazy" alt="Ο χώρος ειδικής διαπαιδαγώγησης" data-lb data-cap="Ειδική διαπαιδαγώγηση"><div class="tx"><h3 data-i18n="s3t">Ειδική διαπαιδαγώγηση</h3><p data-i18n="s3d">Βελτίωση των γνωστικών δεξιοτήτων και προετοιμασία για τη σχολική ένταξη: προγραφή, ανάγνωση, ορθογραφία, προμαθηματικές έννοιες και μαθηματική σκέψη. Ατομικές συνεδρίες.</p></div></article>
-      <article class="rv d3"><img src="assets/s-psy.jpg" loading="lazy" alt="Ο χώρος ψυχολογικής υποστήριξης με την αιώρα" data-lb data-cap="Ψυχολογική υποστήριξη"><div class="tx"><h3 data-i18n="s4t">Ψυχολογική υποστήριξη</h3><p data-i18n="s4d">Ο ψυχολόγος βοηθά το παιδί να διαχειριστεί δυσκολίες και συναισθήματα, να αναγνωρίσει τις δυνατότητές του και να λύνει προβλήματα, με ενεργή συμμετοχή της οικογένειας.</p></div></article>
-      <article class="rv"><img src="assets/s-goneis.jpg" loading="lazy" alt="Ο χώρος συνάντησης και συμβουλευτικής γονέων" data-lb data-cap="Συμβουλευτική γονέων"><div class="tx"><h3 data-i18n="s5t">Συμβουλευτική γονέων</h3><p data-i18n="s5d">Ο κοινωνικός λειτουργός λαμβάνει το κοινωνικό ιστορικό, συμβουλεύει και κατευθύνει τους γονείς — από τη διαχείριση της καθημερινότητας μέχρι τη συνεννόηση με το σχολείο.</p></div></article>
-      <article class="rv d1"><img src="assets/s-omadika.jpg" loading="lazy" alt="Η αίθουσα ομαδικών προγραμμάτων" data-lb data-cap="Ομαδικά προγράμματα"><div class="tx"><h3 data-i18n="s6t">Ομαδικά προγράμματα</h3><p data-i18n="s6d">Δομημένες ομάδες όπου δουλεύονται οι κοινωνικές δεξιότητες, η συνεργασία και η ρύθμιση συναισθήματος — εκεί όπου η ατομική συνεδρία δεν φτάνει από μόνη της.</p></div></article>
-      <article class="rv d2"><img src="assets/s-fylaksi.jpg" loading="lazy" alt="Ο χώρος δημιουργικής απασχόλησης" data-lb data-cap="Φύλαξη και δημιουργική απασχόληση"><div class="tx"><h3 data-i18n="s7t">Φύλαξη &amp; δημιουργική απασχόληση</h3><p data-i18n="s7d">Τμήματα φύλαξης με ουσιαστικό περιεχόμενο: μελέτη, δημιουργικές δραστηριότητες και εποπτεία από εξειδικευμένο προσωπικό, στο ίδιο ασφαλές περιβάλλον.</p></div></article>
-      <article class="rv d3"><img src="assets/s-camp.jpg" loading="lazy" alt="Ο εξωτερικός χώρος με την παιδική χαρά" data-lb data-cap="Εναλλακτικά θεραπευτικά προγράμματα"><div class="tx"><h3 data-i18n="s8t">Εναλλακτικά θεραπευτικά προγράμματα</h3><p data-i18n="s8d">Θεραπεία μέσω τέχνης, μουσικής και κίνησης, καθώς και θεραπευτικά camp — μορφές έκφρασης που ανοίγουν δρόμο εκεί όπου ο λόγος δυσκολεύει.</p></div></article>
+
+    <!-- desktop: the room explorer -->
+    <div class="exp rv d2" id="exp">
+      <div class="exp-list" role="tablist" aria-label="Υπηρεσίες">
+        <button class="exp-btn" role="tab" aria-selected="true" data-i="0"><span class="no">01</span><h3 data-i18n="s1t">Λογοθεραπεία</h3><span class="arr" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+        <button class="exp-btn" role="tab" aria-selected="false" data-i="1"><span class="no">02</span><h3 data-i18n="s2t">Εργοθεραπεία</h3><span class="arr" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+        <button class="exp-btn" role="tab" aria-selected="false" data-i="2"><span class="no">03</span><h3 data-i18n="s3t">Ειδική διαπαιδαγώγηση</h3><span class="arr" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+        <button class="exp-btn" role="tab" aria-selected="false" data-i="3"><span class="no">04</span><h3 data-i18n="s4t">Ψυχολογική υποστήριξη</h3><span class="arr" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+        <button class="exp-btn" role="tab" aria-selected="false" data-i="4"><span class="no">05</span><h3 data-i18n="s5t">Συμβουλευτική γονέων</h3><span class="arr" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+        <button class="exp-btn" role="tab" aria-selected="false" data-i="5"><span class="no">06</span><h3 data-i18n="s6t">Ομαδικά προγράμματα</h3><span class="arr" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+        <button class="exp-btn" role="tab" aria-selected="false" data-i="6"><span class="no">07</span><h3 data-i18n="s7t">Φύλαξη &amp; δημιουργική απασχόληση</h3><span class="arr" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+        <button class="exp-btn" role="tab" aria-selected="false" data-i="7"><span class="no">08</span><h3 data-i18n="s8t">Εναλλακτικά θεραπευτικά προγράμματα</h3><span class="arr" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+      </div>
+      <div class="exp-stage">
+        <div class="stage" id="stage">
+          <img class="on" src="assets/s-logo.jpg" width="1000" height="1407" loading="lazy" decoding="async" alt="Ο χώρος λογοθεραπείας του κέντρου" data-lb data-cap="Λογοθεραπεία">
+          <img src="assets/s-ergo.jpg" width="1000" height="1333" loading="lazy" decoding="async" alt="Ο χώρος εργοθεραπείας με τον τοίχο αναρρίχησης" data-lb data-cap="Εργοθεραπεία">
+          <img src="assets/s-eidiki.jpg" width="1000" height="1333" loading="lazy" decoding="async" alt="Ο χώρος ειδικής διαπαιδαγώγησης" data-lb data-cap="Ειδική διαπαιδαγώγηση">
+          <img src="assets/s-psy.jpg" width="1000" height="1333" loading="lazy" decoding="async" alt="Ο χώρος ψυχολογικής υποστήριξης με την αιώρα" data-lb data-cap="Ψυχολογική υποστήριξη">
+          <img src="assets/s-goneis.jpg" width="1000" height="1333" loading="lazy" decoding="async" alt="Ο χώρος συνάντησης και συμβουλευτικής γονέων" data-lb data-cap="Συμβουλευτική γονέων">
+          <img src="assets/s-omadika.jpg" width="1000" height="750" loading="lazy" decoding="async" alt="Η αίθουσα ομαδικών προγραμμάτων" data-lb data-cap="Ομαδικά προγράμματα">
+          <img src="assets/s-fylaksi.jpg" width="1000" height="1564" loading="lazy" decoding="async" alt="Ο χώρος δημιουργικής απασχόλησης" data-lb data-cap="Φύλαξη και δημιουργική απασχόληση">
+          <img src="assets/s-camp.jpg" width="1000" height="750" loading="lazy" decoding="async" alt="Ο εξωτερικός χώρος με την παιδική χαρά" data-lb data-cap="Εναλλακτικά θεραπευτικά προγράμματα">
+          <span class="cap" id="stageCap" data-i18n="stageCap">Ο χώρος της υπηρεσίας</span>
+        </div>
+        <div class="stage-tx" id="stageTx" aria-live="polite">
+          <span class="k" id="stageK">01 — <span data-i18n="s1t">Λογοθεραπεία</span></span>
+          <p id="stageP" data-i18n="s1d">Αξιολόγηση και αντιμετώπιση των διαταραχών λόγου, ομιλίας και επικοινωνίας, με εξατομικευμένο πρόγραμμα λογοθεραπευτικής αγωγής και στενή συνεργασία με γονείς και εκπαιδευτικούς. Ατομικές συνεδρίες.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- descriptions (source of truth for the explorer, hidden) -->
+    <div hidden id="srvData">
+      <p data-i18n="s1d">Αξιολόγηση και αντιμετώπιση των διαταραχών λόγου, ομιλίας και επικοινωνίας, με εξατομικευμένο πρόγραμμα λογοθεραπευτικής αγωγής και στενή συνεργασία με γονείς και εκπαιδευτικούς. Ατομικές συνεδρίες.</p>
+      <p data-i18n="s2d">Μέσα από το παιχνίδι, ο εργοθεραπευτής αξιολογεί και ενισχύει λεπτή και αδρή κινητικότητα, γνωστικές ικανότητες και οργάνωση, με στόχο τη βέλτιστη λειτουργικότητα και ανεξαρτησία στην καθημερινότητα.</p>
+      <p data-i18n="s3d">Βελτίωση των γνωστικών δεξιοτήτων και προετοιμασία για τη σχολική ένταξη: προγραφή, ανάγνωση, ορθογραφία, προμαθηματικές έννοιες και μαθηματική σκέψη. Ατομικές συνεδρίες.</p>
+      <p data-i18n="s4d">Ο ψυχολόγος βοηθά το παιδί να διαχειριστεί δυσκολίες και συναισθήματα, να αναγνωρίσει τις δυνατότητές του και να λύνει προβλήματα, με ενεργή συμμετοχή της οικογένειας.</p>
+      <p data-i18n="s5d">Ο κοινωνικός λειτουργός λαμβάνει το κοινωνικό ιστορικό, συμβουλεύει και κατευθύνει τους γονείς — από τη διαχείριση της καθημερινότητας μέχρι τη συνεννόηση με το σχολείο.</p>
+      <p data-i18n="s6d">Δομημένες ομάδες όπου δουλεύονται οι κοινωνικές δεξιότητες, η συνεργασία και η ρύθμιση συναισθήματος — εκεί όπου η ατομική συνεδρία δεν φτάνει από μόνη της.</p>
+      <p data-i18n="s7d">Τμήματα φύλαξης με ουσιαστικό περιεχόμενο: μελέτη, δημιουργικές δραστηριότητες και εποπτεία από εξειδικευμένο προσωπικό, στο ίδιο ασφαλές περιβάλλον.</p>
+      <p data-i18n="s8d">Θεραπεία μέσω τέχνης, μουσικής και κίνησης, καθώς και θεραπευτικά camp — μορφές έκφρασης που ανοίγουν δρόμο εκεί όπου ο λόγος δυσκολεύει.</p>
+    </div>
+
+    <!-- tablets & phones: one card per room -->
+    <div class="exp-cards">
+      <article class="exp-card rv"><span class="ph"><img src="assets/s-logo.jpg" width="1000" height="1407" loading="lazy" decoding="async" alt="Ο χώρος λογοθεραπείας του κέντρου" data-lb data-cap="Λογοθεραπεία"></span><div class="tx"><span class="no">01</span><h3 data-i18n="s1t">Λογοθεραπεία</h3><p data-i18n="s1d">Αξιολόγηση και αντιμετώπιση των διαταραχών λόγου, ομιλίας και επικοινωνίας, με εξατομικευμένο πρόγραμμα λογοθεραπευτικής αγωγής και στενή συνεργασία με γονείς και εκπαιδευτικούς. Ατομικές συνεδρίες.</p></div></article>
+      <article class="exp-card rv"><span class="ph"><img src="assets/s-ergo.jpg" width="1000" height="1333" loading="lazy" decoding="async" alt="Ο χώρος εργοθεραπείας με τον τοίχο αναρρίχησης" data-lb data-cap="Εργοθεραπεία"></span><div class="tx"><span class="no">02</span><h3 data-i18n="s2t">Εργοθεραπεία</h3><p data-i18n="s2d">Μέσα από το παιχνίδι, ο εργοθεραπευτής αξιολογεί και ενισχύει λεπτή και αδρή κινητικότητα, γνωστικές ικανότητες και οργάνωση, με στόχο τη βέλτιστη λειτουργικότητα και ανεξαρτησία στην καθημερινότητα.</p></div></article>
+      <article class="exp-card rv"><span class="ph"><img src="assets/s-eidiki.jpg" width="1000" height="1333" loading="lazy" decoding="async" alt="Ο χώρος ειδικής διαπαιδαγώγησης" data-lb data-cap="Ειδική διαπαιδαγώγηση"></span><div class="tx"><span class="no">03</span><h3 data-i18n="s3t">Ειδική διαπαιδαγώγηση</h3><p data-i18n="s3d">Βελτίωση των γνωστικών δεξιοτήτων και προετοιμασία για τη σχολική ένταξη: προγραφή, ανάγνωση, ορθογραφία, προμαθηματικές έννοιες και μαθηματική σκέψη. Ατομικές συνεδρίες.</p></div></article>
+      <article class="exp-card rv"><span class="ph"><img src="assets/s-psy.jpg" width="1000" height="1333" loading="lazy" decoding="async" alt="Ο χώρος ψυχολογικής υποστήριξης με την αιώρα" data-lb data-cap="Ψυχολογική υποστήριξη"></span><div class="tx"><span class="no">04</span><h3 data-i18n="s4t">Ψυχολογική υποστήριξη</h3><p data-i18n="s4d">Ο ψυχολόγος βοηθά το παιδί να διαχειριστεί δυσκολίες και συναισθήματα, να αναγνωρίσει τις δυνατότητές του και να λύνει προβλήματα, με ενεργή συμμετοχή της οικογένειας.</p></div></article>
+      <article class="exp-card rv"><span class="ph"><img src="assets/s-goneis.jpg" width="1000" height="1333" loading="lazy" decoding="async" alt="Ο χώρος συνάντησης και συμβουλευτικής γονέων" data-lb data-cap="Συμβουλευτική γονέων"></span><div class="tx"><span class="no">05</span><h3 data-i18n="s5t">Συμβουλευτική γονέων</h3><p data-i18n="s5d">Ο κοινωνικός λειτουργός λαμβάνει το κοινωνικό ιστορικό, συμβουλεύει και κατευθύνει τους γονείς — από τη διαχείριση της καθημερινότητας μέχρι τη συνεννόηση με το σχολείο.</p></div></article>
+      <article class="exp-card rv"><span class="ph"><img src="assets/s-omadika.jpg" width="1000" height="750" loading="lazy" decoding="async" alt="Η αίθουσα ομαδικών προγραμμάτων" data-lb data-cap="Ομαδικά προγράμματα"></span><div class="tx"><span class="no">06</span><h3 data-i18n="s6t">Ομαδικά προγράμματα</h3><p data-i18n="s6d">Δομημένες ομάδες όπου δουλεύονται οι κοινωνικές δεξιότητες, η συνεργασία και η ρύθμιση συναισθήματος — εκεί όπου η ατομική συνεδρία δεν φτάνει από μόνη της.</p></div></article>
+      <article class="exp-card rv"><span class="ph"><img src="assets/s-fylaksi.jpg" width="1000" height="1564" loading="lazy" decoding="async" alt="Ο χώρος δημιουργικής απασχόλησης" data-lb data-cap="Φύλαξη και δημιουργική απασχόληση"></span><div class="tx"><span class="no">07</span><h3 data-i18n="s7t">Φύλαξη &amp; δημιουργική απασχόληση</h3><p data-i18n="s7d">Τμήματα φύλαξης με ουσιαστικό περιεχόμενο: μελέτη, δημιουργικές δραστηριότητες και εποπτεία από εξειδικευμένο προσωπικό, στο ίδιο ασφαλές περιβάλλον.</p></div></article>
+      <article class="exp-card rv"><span class="ph"><img src="assets/s-camp.jpg" width="1000" height="750" loading="lazy" decoding="async" alt="Ο εξωτερικός χώρος με την παιδική χαρά" data-lb data-cap="Εναλλακτικά θεραπευτικά προγράμματα"></span><div class="tx"><span class="no">08</span><h3 data-i18n="s8t">Εναλλακτικά θεραπευτικά προγράμματα</h3><p data-i18n="s8d">Θεραπεία μέσω τέχνης, μουσικής και κίνησης, καθώς και θεραπευτικά camp — μορφές έκφρασης που ανοίγουν δρόμο εκεί όπου ο λόγος δυσκολεύει.</p></div></article>
     </div>
   </div>
 </section>
@@ -356,13 +511,14 @@ p{margin:0 0 1.05em}p:last-child{margin-bottom:0}
 </section>
 
 <section class="sec" id="se-poious">
-  <div class="wrap">
-    <div style="max-width:62ch">
+  <div class="wrap who">
+    <div>
       <span class="eyebrow rv" data-i18n="whEyebrow">Σε ποιους απευθυνόμαστε</span>
       <h2 class="rv d1" data-i18n="whTitle">Παιδιά και έφηβοι — και οι άνθρωποι γύρω τους.</h2>
       <p class="lead rv d2" style="margin-top:1.3rem" data-i18n="whLead">Δεν χρειάζεται διάγνωση για να έρθετε. Αν κάτι σας ανησυχεί στην εξέλιξη, τον λόγο, τη μάθηση ή τη συμπεριφορά του παιδιού, η αξιολόγηση θα το ξεκαθαρίσει.</p>
+      <div class="cta-row rv d3"><a class="btn btn-d" href="#epikoinonia"><span data-i18n="ctaBook">Κλείστε αξιολόγηση</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
     </div>
-    <div class="chips rv d3">
+    <div class="chips rv d2">
       <span class="chip" data-i18n="w1">Διαταραχές λόγου &amp; ομιλίας</span>
       <span class="chip" data-i18n="w2">Μαθησιακές δυσκολίες</span>
       <span class="chip" data-i18n="w3">ΔΕΠ-Υ</span>
@@ -408,24 +564,25 @@ p{margin:0 0 1.05em}p:last-child{margin-bottom:0}
         <div class="row"><b data-i18n="lblMapL">Χάρτης</b><span><a href="https://maps.google.com/?q=Καλύμνου+1+Βούλα" target="_blank" rel="noopener" data-i18n="lblMap">Άνοιγμα στον χάρτη</a></span></div>
       </div>
     </div>
-    <form class="rv d1" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+    <form class="cf rv d1" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
       <input type="hidden" name="form-name" value="contact">
       <p class="hp"><label>Μην συμπληρώσετε: <input name="bot-field"></label></p>
       <div class="field"><label for="n" data-i18n="fName">Ονοματεπώνυμο</label><input id="n" name="name" type="text" required autocomplete="name"></div>
       <div class="field"><label for="e" data-i18n="fEmail">Email</label><input id="e" name="email" type="email" required autocomplete="email"></div>
       <div class="field"><label for="t" data-i18n="fPhone">Τηλέφωνο</label><input id="t" name="phone" type="tel" autocomplete="tel"></div>
       <div class="field"><label for="m" data-i18n="fMsg">Πείτε μας λίγα λόγια</label><textarea id="m" name="message" required></textarea></div>
-      <button class="btn btn-p" type="submit" data-i18n="fSend">Αποστολή</button>
+      <button class="btn btn-p" type="submit" style="width:100%"><span data-i18n="fSend">Αποστολή</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
       <p class="note" data-i18n="fNote">Τα στοιχεία σας χρησιμοποιούνται αποκλειστικά για να απαντηθεί το αίτημά σας και παραμένουν εμπιστευτικά.</p>
     </form>
   </div>
 </section>
+</main>
 
 <footer class="ft">
   <div class="wrap">
     <div class="ft-top">
       <div>
-        <a class="ft-brand" href="#top">
+        <a class="ft-brand" href="#top" aria-label="Αρχική">
           <img src="assets/logo.jpg" width="52" height="52" alt="Λογότυπο Λόγος και Αριθμός">
           <b data-i18n="brand">Λόγος &amp; Αριθμός</b>
         </a>
@@ -468,29 +625,40 @@ p{margin:0 0 1.05em}p:last-child{margin-bottom:0}
   </div>
 </footer>
 
+<nav class="mbar" id="mbar" aria-label="Γρήγορες ενέργειες">
+  <a href="tel:+302104408008"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z" stroke-linejoin="round"/></svg><span data-i18n="mbCall">Κλήση</span></a>
+  <a href="#epikoinonia"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4" stroke-linecap="round"/></svg><span data-i18n="mbBook">Ραντεβού</span></a>
+  <a href="https://maps.google.com/?q=Καλύμνου+1+Βούλα" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg><span data-i18n="mbDir">Οδηγίες</span></a>
+</nav>
+
 <div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Προβολή εικόνας">
   <button class="lb-x" id="lbx" aria-label="Κλείσιμο">&#10005;</button>
   <img id="lbimg" src="" alt="">
   <div class="lb-cap" id="lbcap"></div>
 </div>
 
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"MedicalBusiness","name":"Λόγος & Αριθμός — Ψυχοπαιδαγωγικό Κέντρο","alternateName":"Logos & Arithmos","email":"kentrologosarithmos@gmail.com","telephone":"+302104408008","url":"https://www.logosarithmos.com","address":{"@type":"PostalAddress","streetAddress":"Καλύμνου 1","addressLocality":"Βούλα","postalCode":"166 73","addressCountry":"GR"}}
+</script>
+
 <script>
 window.EN={
  brand:"Logos &amp; Arithmos", brandShort:"Logos &amp; Arithmos", brandSub:"Psychopedagogical Centre · Voula",
  navAbout:"The Centre", navServices:"Services", navHow:"How we work", navWho:"Who we help", navTeam:"The team", navContact:"Contact",
  heroTag:"Prevention · Assessment · Rehabilitation",
- heroTitle:"Every child learns in their own way.",
+ heroTitle:"<span class=\"ln\"><span>Every child learns</span></span><span class=\"ln\"><span>in their <span class=\"mark\">own<svg viewBox=\"0 0 100 10\" preserveAspectRatio=\"none\" aria-hidden=\"true\"><path d=\"M2 7 C 25 2, 50 9, 98 4\"/></svg></span> way.</span></span>",
  heroLead:"Logos &amp; Arithmos is a modern psychopedagogical centre in Voula. An interdisciplinary team alongside children, adolescents and their families — with individualised programmes and evidence-based methods.",
  ctaBook:"Book an assessment", ctaServices:"See the services",
  pil1t:"An interdisciplinary team", pil1d:"Child psychiatrist, speech and language therapist, occupational therapist, psychologist, special educator and social worker, in one place and on one plan.",
  pil2t:"An individual programme", pil2d:"Every programme is adapted to the abilities, learning style and therapeutic needs of that particular child.",
  pil3t:"The family included", pil3d:"Information and guidance for parents throughout — because progress carries on at home.",
- abEyebrow:"The Centre", abTitle:"A space built so that a child feels safe.",
+ abEyebrow:"The Centre", abTitle:"A space built so that a child feels safe.", abCap:"The reception · 1 Kalymnou St, Voula",
  abP1:"Logos &amp; Arithmos is a specialist therapeutic centre for children and adolescents in Voula. It operates as a modern space for prevention, assessment and rehabilitation, with holistic support that extends to the family.",
  abP2:"The therapeutic work follows an individualised, evidence-based methodology. Nothing begins before an assessment; and while the programme runs, it is reviewed against real progress rather than the calendar.",
  abVision:"What we are after is a supportive environment that promotes development, independence and quality of life.",
  srvEyebrow:"Services", srvTitle:"Eight services, one plan per child.",
  srvLead:"The services combine: rarely is just one needed, and they never work in isolation from one another.",
+ stageCap:"The room for this service",
  s1t:"Speech &amp; language therapy", s1d:"Assessment and treatment of speech, language and communication disorders, with an individualised therapy programme and close cooperation with parents and teachers. Individual sessions.",
  s2t:"Occupational therapy", s2d:"Through play, the occupational therapist assesses and builds fine and gross motor skills, cognitive ability and organisation, aiming at the best possible function and independence in daily life.",
  s3t:"Special education", s3d:"Building cognitive skills and preparing for school: pre-writing, reading, spelling, pre-mathematical concepts and mathematical thinking. Individual sessions.",
@@ -525,10 +693,11 @@ window.EN={
  fNote:"Your details are used solely to answer your enquiry and are kept confidential.",
  ftAbout:"A psychopedagogical centre in Voula. Prevention, assessment and rehabilitation for children and adolescents, with the family inside the process.",
  ftNav:"Navigation", ftServices:"Services", ftContact:"Contact",
- ftRights:"© <span id=\"yr\"></span> Logos &amp; Arithmos. All rights reserved."
+ ftRights:"© <span id=\"yr\"></span> Logos &amp; Arithmos. All rights reserved.",
+ mbCall:"Call", mbBook:"Book", mbDir:"Directions"
 };
 (function(){
-  var d=document, EL={}, reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var d=document, EL={};
   d.querySelectorAll('[data-i18n]').forEach(function(el){ var k=el.getAttribute('data-i18n'); if(!(k in EL)) EL[k]=el.innerHTML; });
   var META={el:{title:"Λόγος & Αριθμός — Ψυχοπαιδαγωγικό Κέντρο | Βούλα"},en:{title:"Logos & Arithmos — Psychopedagogical Centre | Voula"}};
   function apply(l){
@@ -538,37 +707,81 @@ window.EN={
       if(v!==undefined) el.innerHTML=v;
     });
     d.documentElement.lang=l; d.title=META[l].title;
-    var y=d.getElementById('yr'); if(y) y.textContent=new Date().getFullYear();
+    d.querySelectorAll('#yr').forEach(function(y){ y.textContent=new Date().getFullYear(); });
     d.querySelectorAll('.lang button').forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.lang===l)); });
     try{ localStorage.setItem('la-lang', l); }catch(e){}
+    if (window.__syncStage) window.__syncStage();
   }
   d.querySelectorAll('.lang button').forEach(function(b){ b.addEventListener('click', function(){ apply(b.dataset.lang); }); });
-  d.getElementById('yr').textContent=new Date().getFullYear();
+  d.querySelectorAll('#yr').forEach(function(y){ y.textContent=new Date().getFullYear(); });
   try{ if(localStorage.getItem('la-lang')==='en') apply('en'); }catch(e){}
+})();
+</script>
+<script>
+(function(){
+  var d=document, reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  var hdr=d.getElementById('hdr');
-  function onScroll(){ hdr.classList.toggle('stuck', window.scrollY>60); }
+  var hdr=d.getElementById('hdr'), prog=d.getElementById('progress'), mbar=d.getElementById('mbar'), lastY=0;
+  function onScroll(){
+    var y=window.scrollY||0;
+    hdr.classList.toggle('stuck', y>40);
+    hdr.classList.toggle('hide', y>700 && y>lastY+6);
+    lastY=y;
+    var h=d.documentElement.scrollHeight-innerHeight;
+    prog.style.width=(h>0? y/h*100:0)+'%';
+    mbar.classList.toggle('on', y>innerHeight*0.6);
+  }
   onScroll(); addEventListener('scroll', onScroll, {passive:true});
 
-  var mnav=d.getElementById('mnav');
-  function setNav(o){ mnav.classList.toggle('open',o); d.body.style.overflow=o?'hidden':''; d.getElementById('burger').setAttribute('aria-expanded',o); }
-  d.getElementById('burger').addEventListener('click',function(){setNav(true)});
+  var secs=[].slice.call(d.querySelectorAll('main section[id]')), links=[].slice.call(d.querySelectorAll('.nav a'));
+  if('IntersectionObserver' in window){
+    var spy=new IntersectionObserver(function(es){ es.forEach(function(e){ if(!e.isIntersecting) return; links.forEach(function(a){ a.classList.toggle('active', a.getAttribute('href')==='#'+e.target.id); }); }); },{rootMargin:'-45% 0px -50% 0px'});
+    secs.forEach(function(s){ spy.observe(s); });
+  }
+
+  var mnav=d.getElementById('mnav'), burger=d.getElementById('burger');
+  function setNav(o){ mnav.classList.toggle('open',o); d.body.style.overflow=o?'hidden':''; burger.setAttribute('aria-expanded',String(o)); }
+  burger.addEventListener('click',function(){setNav(true)});
   d.getElementById('mclose').addEventListener('click',function(){setNav(false)});
   mnav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){setNav(false)})});
 
-  var io=new IntersectionObserver(function(es){es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} })},{rootMargin:'0px 0px -8% 0px',threshold:.08});
-  d.querySelectorAll('.rv').forEach(function(el){ if(!el.classList.contains('in')) io.observe(el); });
+  if(!reduced){
+    var heroEls=[].slice.call(d.querySelectorAll('.hero .in'));
+    heroEls.forEach(function(el){ el.classList.remove('in'); });
+    void d.body.offsetWidth;
+    requestAnimationFrame(function(){ requestAnimationFrame(function(){ heroEls.forEach(function(el){ el.classList.add('in'); }); }); });
+  }
+
+  var io=null;
+  if('IntersectionObserver' in window && !reduced){
+    io=new IntersectionObserver(function(es){es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} })},{rootMargin:'0px 0px -8% 0px',threshold:.04});
+  }
+  d.querySelectorAll('.rv,.lines,.eyebrow,.steps article').forEach(function(el){ if(el.classList.contains('in')) return; if(io) io.observe(el); else el.classList.add('in'); });
 
   var hi=d.querySelector('.hero-media img');
   if(hi && !reduced){ var t=false;
-    addEventListener('scroll',function(){ if(t)return; t=true; requestAnimationFrame(function(){ var y=window.scrollY; if(y<window.innerHeight) hi.style.transform='translate3d(0,'+(y*0.15).toFixed(1)+'px,0)'; t=false; }); },{passive:true}); }
+    addEventListener('scroll',function(){ if(t)return; t=true; requestAnimationFrame(function(){ var y=window.scrollY; if(y<innerHeight) hi.style.setProperty('translate','0 '+(y*0.14).toFixed(1)+'px'); t=false; }); },{passive:true}); }
+
+  /* room explorer */
+  var btns=[].slice.call(d.querySelectorAll('.exp-btn')), imgs=[].slice.call(d.querySelectorAll('#stage img')),
+      data=[].slice.call(d.querySelectorAll('#srvData p')), K=d.getElementById('stageK'), P=d.getElementById('stageP'), cur=0;
+  function show(i){
+    cur=i;
+    btns.forEach(function(b,j){ b.setAttribute('aria-selected', String(j===i)); });
+    imgs.forEach(function(im,j){ im.classList.toggle('on', j===i); });
+    var title=btns[i].querySelector('h3').innerHTML;
+    K.innerHTML=(i<9?'0':'')+(i+1)+' — '+title;
+    P.innerHTML=data[i].innerHTML;
+  }
+  btns.forEach(function(b){ b.addEventListener('click', function(){ show(+b.dataset.i); }); b.addEventListener('mouseenter', function(){ if(matchMedia('(hover:hover)').matches) show(+b.dataset.i); }); });
+  window.__syncStage=function(){ if(btns.length) show(cur); };
 
   var lb=d.getElementById('lb'), lbimg=d.getElementById('lbimg'), lbcap=d.getElementById('lbcap');
-  function open(src,alt,cap){ lbimg.src=src; lbimg.alt=alt||''; lbcap.textContent=cap||''; lb.classList.add('open'); d.body.style.overflow='hidden'; }
-  function close(){ lb.classList.remove('open'); d.body.style.overflow=''; setTimeout(function(){lbimg.src=''},350); }
+  function open(src,alt,cap){ lbimg.src=src; lbimg.alt=alt||''; lbcap.textContent=cap||''; lb.classList.add('open'); d.body.style.overflow='hidden'; d.getElementById('lbx').focus(); }
+  function close(){ lb.classList.remove('open'); d.body.style.overflow=''; setTimeout(function(){lbimg.removeAttribute('src')},350); }
   d.addEventListener('click',function(e){
     var im=e.target.closest('img[data-lb]');
-    if(im){ e.preventDefault(); open(im.currentSrc||im.src, im.alt, im.getAttribute('data-cap')); }
+    if(im){ if(im.closest('#stage') && !im.classList.contains('on')) return; e.preventDefault(); open(im.currentSrc||im.src, im.alt, im.getAttribute('data-cap')); }
   });
   d.getElementById('lbx').addEventListener('click',close);
   lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
